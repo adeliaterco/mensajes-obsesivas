@@ -24,7 +24,8 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { quizSteps, socialProofMessages, getPersonalizedContent } from "@/lib/quiz-data"
+// Importamos quizSteps e socialProofMessages que já foram adaptados
+import { quizSteps, socialProofMessages, getPersonalizedContent } from "@/lib/quiz-data" 
 import { BonusUnlock } from "@/components/bonus-unlock"
 import { ValueCounter } from "@/components/value-counter"
 import { LoadingAnalysis } from "@/components/loading-analysis"
@@ -50,7 +51,8 @@ export default function QuizStep() {
   const [newBonus, setNewBonus] = useState<any>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [peopleCount, setPeopleCount] = useState(17)
-  const [userGender, setUserGender] = useState<string>("")
+  // userGender foi removido, pois o quiz é fixo para o público feminino
+  // const [userGender, setUserGender] = useState<string>("") 
 
   const currentStep = quizSteps[step - 1]
   const progress = (step / 14) * 100
@@ -60,12 +62,14 @@ export default function QuizStep() {
     const saved = localStorage.getItem("quizData")
     const savedBonuses = localStorage.getItem("unlockedBonuses")
     const savedValue = localStorage.getItem("totalValue")
-    const savedGender = localStorage.getItem("userGender")
+    // savedGender foi removido
+    // const savedGender = localStorage.getItem("userGender")
 
     if (saved) setQuizData(JSON.parse(saved))
     if (savedBonuses) setUnlockedBonuses(JSON.parse(savedBonuses))
     if (savedValue) setTotalValue(Number.parseInt(savedValue))
-    if (savedGender) setUserGender(savedGender)
+    // setUserGender foi removido
+    // if (savedGender) setUserGender(savedGender)
 
     // Retraso de animación
     setTimeout(() => {
@@ -105,11 +109,11 @@ export default function QuizStep() {
       resposta: answer
     });
 
-    // Guardar selección de género en el primer paso
-    if (step === 1) {
-      setUserGender(answer)
-      localStorage.setItem("userGender", answer)
-    }
+    // A lógica de salvar gênero no localStorage foi removida, pois o quiz é fixo para mulheres
+    // if (step === 1) {
+    //   setUserGender(answer)
+    //   localStorage.setItem("userGender", answer)
+    // }
 
     // Retroalimentación visual inmediata
     const button = document.querySelector(`button[data-option="${answer}"]`)
@@ -178,11 +182,12 @@ export default function QuizStep() {
       setUnlockedBonuses(newUnlockedBonuses)
       setTotalValue(newTotalValue)
 
-      // Personalizar bonificación basada en el género
+      // Personalizar bonificación basada en el género (agora fixo para feminino)
       const personalizedBonus = {
         ...currentStep.bonusUnlock,
-        title: getPersonalizedContent(currentStep.bonusUnlock.title, userGender),
-        description: getPersonalizedContent(currentStep.bonusUnlock.description, userGender),
+        // getPersonalizedContent já foi adaptado para sempre retornar a versão feminina
+        title: getPersonalizedContent(currentStep.bonusUnlock.title), 
+        description: getPersonalizedContent(currentStep.bonusUnlock.description),
       }
       setNewBonus(personalizedBonus)
 
@@ -266,16 +271,17 @@ export default function QuizStep() {
   }
 
   const getStepIcon = (stepNumber: number, index: number) => {
+    // Ícones genéricos que se encaixam na temática de atração/relacionamento
     const iconMaps = {
-      1: [User, Users], // Género
-      2: [Calendar, TrendingUp, Target, Zap], // Edad
-      3: [Clock, Calendar, MessageCircle, Heart], // Tiempo separados
-      4: [Heart, MessageCircle, Users], // Cómo fue la separación
-      5: [Calendar, Heart, TrendingUp, Clock], // Tiempo juntos
+      1: [Heart, Target], // Foco na obsessão/desejo
+      2: [Calendar, TrendingUp, Smile, Zap], // Idade
+      3: [Clock, MessageCircle, Heart, Calendar], // Tempo separados
+      4: [Heart, MessageCircle, AlertTriangle], // Como foi a separação
+      5: [Calendar, Heart, TrendingUp, Clock], // Tempo juntos
       6: [Smile, Heart, MessageCircle, TrendingUp, Target, Zap], // Parte dolorosa
-      7: [MessageCircle, Heart, Users, TrendingUp, Smile, Users, Heart], // Situación actual
-      8: [MessageCircle, Heart, Users, TrendingUp, Smile], // Ella está con otra persona
-      9: [Heart, TrendingUp, Target, Zap], // Nivel de compromiso
+      7: [MessageCircle, Heart, Users, TrendingUp, Smile, Users, Heart], // Situação atual
+      8: [MessageCircle, Heart, Users, TrendingUp, Smile], // Ele está com outra pessoa
+      9: [Heart, TrendingUp, Target, Zap], // Nível de compromisso
     }
 
     const icons = iconMaps[stepNumber] || [Heart]
@@ -283,13 +289,13 @@ export default function QuizStep() {
     return <Icon className="w-6 h-6" />
   }
 
-  // Obtener contenido personalizado basado en el género
+  // getPersonalizedContent já foi adaptado para sempre retornar a versão feminina
   const getPersonalizedQuestion = () => {
-    return getPersonalizedContent(currentStep.question, userGender)
+    return getPersonalizedContent(currentStep.question)
   }
 
   const getPersonalizedOptions = () => {
-    const options = getPersonalizedContent(currentStep.options, userGender)
+    const options = getPersonalizedContent(currentStep.options)
     return Array.isArray(options) ? options : currentStep.options
   }
 
@@ -347,9 +353,9 @@ export default function QuizStep() {
         {/* Imagen de Testimonio - Aparece en la etapa 7 o 12 */}
         {(step === 7 || step === 12) && currentStep?.elements?.testimonialImage && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-blue-500/50 shadow-lg">
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-orange-500/50 shadow-lg"> {/* Corrigido para laranja */}
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-blue-400 mb-4">💬 TESTIMONIO REAL</h3>
+                <h3 className="text-xl font-bold text-orange-400 mb-4">💬 TESTIMONIO REAL</h3> {/* Corrigido para laranja */}
                 <motion.div
                   animate={{
                     y: [0, -8, 0],
@@ -378,8 +384,8 @@ export default function QuizStep() {
                     </div>
                   )}
                 </motion.div>
-                <p className="text-blue-300 font-medium">
-                  ¡Vea lo que nuestros clientes están diciendo sobre los resultados!
+                <p className="text-orange-300 font-medium"> {/* Corrigido para laranja */}
+                  ¡Vea lo que nuestras estudiantes están diciendo sobre los resultados!
                 </p>
               </CardContent>
             </Card>
@@ -404,8 +410,8 @@ export default function QuizStep() {
                   {currentStep?.elements?.expertImage ? (
                     <motion.img
                       src={currentStep.elements.expertImage}
-                      alt="Experto en Reconquista"
-                      className="w-24 h-24 rounded-full object-cover border-4 border-blue-600 mx-auto mb-6"
+                      alt="Experta en Obsesión Masculina" // Alt text atualizado
+                      className="w-24 h-24 rounded-full object-cover border-4 border-orange-600 mx-auto mb-6" // Corrigido para laranja
                       animate={{
                         y: [0, -8, 0],
                         scale: [1, 1.02, 1],
@@ -417,7 +423,7 @@ export default function QuizStep() {
                       }}
                     />
                   ) : (
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-24 h-24 bg-gradient-to-br from-orange-600 to-red-700 rounded-full flex items-center justify-center mx-auto mb-6"> {/* Corrigido para laranja */}
                       <User className="w-12 h-12 text-white" />
                     </div>
                   )}
@@ -428,7 +434,7 @@ export default function QuizStep() {
                     transition={{ delay: 0.5 }}
                     className="mb-6"
                   >
-                    <p className="text-blue-400 font-semibold text-lg mb-4">{currentStep.elements?.autoMessage}</p>
+                    <p className="text-orange-400 font-semibold text-lg mb-4">{currentStep.elements?.autoMessage}</p> {/* Corrigido para laranja */}
                   </motion.div>
 
                   <div className="flex justify-center">
@@ -436,7 +442,7 @@ export default function QuizStep() {
                       {[...Array(3)].map((_, i) => (
                         <motion.div
                           key={i}
-                          className="w-3 h-3 bg-blue-500 rounded-full"
+                          className="w-3 h-3 bg-orange-500 rounded-full" // Corrigido para laranja
                           animate={{
                             opacity: [0.3, 1, 0.3],
                           }}
@@ -470,8 +476,8 @@ export default function QuizStep() {
                   {currentStep?.elements?.expertImage ? (
                     <motion.img
                       src={currentStep.elements.expertImage}
-                      alt="Experto en Reconquista"
-                      className="w-20 h-20 rounded-full object-cover border-4 border-blue-600"
+                      alt="Experta en Obsesión Masculina" // Alt text atualizado
+                      className="w-20 h-20 rounded-full object-cover border-4 border-orange-600" // Corrigido para laranja
                       animate={{
                         y: [0, -6, 0],
                         rotate: [0, 2, -2, 0],
@@ -483,7 +489,7 @@ export default function QuizStep() {
                       }}
                     />
                   ) : (
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-700 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-orange-600 to-red-700 rounded-full flex items-center justify-center"> {/* Corrigido para laranja */}
                       <User className="w-10 h-10 text-white" />
                     </div>
                   )}
@@ -524,7 +530,7 @@ export default function QuizStep() {
                   {currentStep?.elements?.thermometer && (
                     <div className="mb-8">
                       <div className="flex justify-between text-gray-300 text-sm mb-2 font-medium">
-                        <span>No estoy seguro</span>
+                        <span>No estoy segura</span> {/* Adaptado para feminino */}
                         <span>Lo quiero mucho</span>
                       </div>
                       <div className="bg-gray-700 rounded-full h-4 mb-4">
@@ -548,8 +554,8 @@ export default function QuizStep() {
                           transition={{ delay: index * 0.1, duration: 0.4 }}
                           className="relative"
                         >
-                          {/* GIF ESPECIAL PARA A OPÇÃO "No dejes que la..." NA ETAPA 1 */}
-                          {step === 1 && option.includes("No dejes que la") && (
+                          {/* GIF ESPECIAL PARA A OPÇÃO "SÍ, ESTOY LISTA PARA QUE ÉL ME DESEE OBSESIVAMENTE" NA ETAPA 1 */}
+                          {step === 1 && option.includes("SÍ, ESTOY LISTA") && (
                             <motion.div
                               initial={{ opacity: 0, y: -20, scale: 0.8 }}
                               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -564,7 +570,7 @@ export default function QuizStep() {
                               {/* Container do GIF com efeitos */}
                               <div className="relative mb-3">
                                 <motion.img
-                                  src="https://comprarplanseguro.shop/wp-content/uploads/2025/06/edy1q-marilyn-monroe-gif-by-maudit.gif"
+                                  src="https://comprarplanseguro.shop/wp-content/uploads/2025/06/edy1q-marilyn-monroe-gif-by-maudit.gif" // Manter GIF, pois é sobre atração
                                   alt="Marilyn Monroe GIF"
                                   className="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full border-4 border-gradient-to-r from-pink-500 to-red-500 shadow-2xl"
                                   animate={{
@@ -608,7 +614,7 @@ export default function QuizStep() {
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.8 }}
                               >
-                                💋 ¡La opción más poderosa para reconquistar!
+                                💋 ¡La opción más poderosa para que él se obsesione!
                               </motion.p>
                             </motion.div>
                           )}
@@ -726,7 +732,7 @@ export default function QuizStep() {
             )}
 
             {step > 5 && (
-              <p className="text-blue-300 text-sm bg-blue-900/20 px-3 py-1 rounded-full inline-block">
+              <p className="text-orange-300 text-sm bg-orange-900/20 px-3 py-1 rounded-full inline-block"> {/* Corrigido para laranja */}
                 {socialProofMessages[Math.min(step - 6, socialProofMessages.length - 1)]}
               </p>
             )}
@@ -741,7 +747,7 @@ export default function QuizStep() {
             message={
               currentStep?.elements?.analysisText ||
               currentStep?.elements?.profileAnalysis ||
-              "Analizando tus respuestas..."
+              "Analizando tus respuestas para que él se obsesione..." // Texto adaptado
             }
             successMessage={currentStep?.elements?.successRate}
           />
