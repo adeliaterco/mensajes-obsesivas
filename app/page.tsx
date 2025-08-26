@@ -244,8 +244,8 @@ export default function HomePage() {
             {/* LOGO CENTRALIZADA - IMAGEM WEBP OTIMIZADA */}
             <div className="logo-container">
               <Image
-                src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/nova-capa.webp"
-                alt="Logo Plan A"
+                src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/nova-capa.webp" // Substituir pela logo da sua oferta
+                alt="Logo Mensajes Obsesivas" // Alt text atualizado
                 width={200}
                 height={120}
                 className="logo-arredondada"
@@ -263,12 +263,12 @@ export default function HomePage() {
 
             {/* TÍTULO PRINCIPAL OTIMIZADO */}
             <h1 className="titulo-principal">
-              Haz que tu amor regrese a ti 100% en piloto automático, incluso en las situaciones más complicadas.
+              Haz que él se obsesione contigo y no te deje ir jamás.
             </h1>
 
             {/* SUBTÍTULO OTIMIZADO */}
             <p className="subtitulo">
-              Sin juegos mentales. Solo el poder del método probado por más de 3.847 personas.
+              Sin juegos mentales. Solo el poder de la fórmula probada por más de 3.847 mujeres.
             </p>
 
             {/* INDICADOR DE PROGRESSO */}
@@ -308,7 +308,7 @@ export default function HomePage() {
             {/* TEXTO DE GARANTIA */}
             <div className="texto-garantia">
               <Shield size={16} />
-              <span>Confidencial y personalizado. En solo 2 minutos tendrás tu plan de acción.</span>
+              <span>Confidencial y personalizado. En solo 2 minutos tendrás tu fórmula de obsesión.</span>
             </div>
           </div>
         </div>
@@ -317,8 +317,8 @@ export default function HomePage() {
         <div className="depoimento">
           <div className="avatar">
             <Image
-              src="https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-pv-inicial.webp"
-              alt="Pablo Alvez"
+              src="https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-pv-inicial.webp" // Substituir por imagem de mulher
+              alt="Emília R." // Nome feminino
               width={55}
               height={55}
               style={{ borderRadius: "50%", objectFit: "cover" }}
@@ -331,16 +331,15 @@ export default function HomePage() {
           </div>
           <div>
             <div className="estrelas">★★★★★</div>
-            <div className="nome-usuario">Pablo Alvez (@Plaboalvezs)</div>
+            <div className="nome-usuario">Emília R. (@EmiliaR)</div> {/* Nome feminino */}
             <div className="texto-depoimento">
-              "Apliqué tu Método de los 3 Pasos y en 2 semanas ella regresó. Sin juegos mentales, ¡simplemente
-              funciona!"
+              "Apliqué la fórmula de Mensajes Obsesivas y en 2 semanas él volvió, ¡más obsesionado que nunca! Sin juegos mentales, ¡simplemente funciona!"
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="copyright">Plan A™ Todos los Derechos Reservados.</div>
+        <div className="copyright">Mensajes Obsesivas™ Todos los Derechos Reservados.</div> {/* Nome da oferta */}
 
         <style jsx>{`
           @keyframes spin {
