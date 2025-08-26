@@ -1,12 +1,12 @@
 export const quizSteps = [
   {
     id: 1,
-    question: "¡NO DEJES QUE LA PERSONA QUE AMAS SALGA DE TU VIDA PARA SIEMPRE!",
-    description: "Haz la prueba rápida de 2 minutos y descubre cómo aplicar el PLAN A - en tu caso específico.",
-    subtext: "Selecciona tu género:",
-    options: ["MASCULINO", "FEMENINO"],
+    question: "¡HAZ QUE ÉL SE OBSESIONE CONTIGO Y NO TE DEJE IR JAMÁS!",
+    description: "Haz la prueba rápida de 2 minutos y descubre cómo activar el 'cerebro reptiliano' de tu hombre.",
+    subtext: "Este quiz es para mujeres que quieren que él las persiga sin parar:",
+    options: ["SÍ, ESTOY LISTA PARA QUE ÉL ME DESEE OBSESIVAMENTE"], // Opção única para mulheres
     warning:
-      "⚠️ ATENCIÓN: ¡Este método comprobado solo debe usarse si estás 100% comprometido en reconquistar tu amor perdido!",
+      "⚠️ ATENCIÓN: ¡Este método es tan poderoso que solo debes usarlo si estás lista para que él te persiga sin parar!",
     elements: {
       heartbeat: true,
       timer: "Prueba de 2 minutos",
@@ -15,7 +15,7 @@ export const quizSteps = [
   {
     id: 2,
     question: "¿CUÁL ES TU EDAD?",
-    description: "(Esta información es crucial para personalizar tu plan de reconquista)",
+    description: "(Esta información es crucial para personalizar tu plan y hacer que él te vea como 'la única')",
     options: [
       "18-29 - Fase de descubrimientos emocionales",
       "29-39 - Período de consolidación de valores",
@@ -24,17 +24,14 @@ export const quizSteps = [
     ],
     elements: {
       ageIcons: true,
-      counter: "personas que ya hicieron la prueba hoy",
+      counter: "mujeres que ya hicieron la prueba hoy", // Adaptado para mulheres
     },
   },
   {
     id: 3,
-    question: "¿CUÁNTO TIEMPO LLEVAN SEPARADOS?",
-    description: "(El tiempo es un factor crítico para tu estrategia de reconquista)",
-    options: {
-      masculino: ["Menos de una semana", "Hace 1 mes", "De 2 a 6 meses", "Más de 6 meses"],
-      feminino: ["Menos de una semana", "Hace 1 mes", "De 2 a 6 meses", "Más de 6 meses"],
-    },
+    question: "¿CUÁNTO TIEMPO LLEVAN SEPARADAS DE ÉL?", // Pergunta adaptada
+    description: "(El tiempo es un factor crítico para tu estrategia de reconquista y obsesión)",
+    options: ["Menos de una semana", "Hace 1 mes", "De 2 a 6 meses", "Más de 6 meses"], // Usando apenas a opção feminina
     bonusUnlock: {
       id: 1,
       title: "21 DISPARADORES EMOCIONALES QUE FUNCIONAN",
@@ -44,15 +41,9 @@ export const quizSteps = [
   },
   {
     id: 4,
-    question: {
-      masculino: "¿CÓMO FUE SU SEPARACIÓN?",
-      feminino: "¿CÓMO FUE SU SEPARACIÓN?",
-    },
-    description: "(Esta información es vital para determinar tu estrategia específica)",
-    options: {
-      masculino: ["Ella terminó conmigo", "Yo terminé con ella", "Decidimos terminar de mutuo acuerdo"],
-      feminino: ["Él terminó conmigo", "Yo terminé con él", "Decidimos terminar de mutuo acuerdo"],
-    },
+    question: "¿CÓMO FUE SU SEPARACIÓN?", // Pergunta adaptada
+    description: "(Esta información es vital para determinar tu estrategia específica para que él se arrepienta)",
+    options: ["Él terminó conmigo", "Yo terminé con él", "Decidimos terminar de mutuo acuerdo"], // Usando apenas a opção feminina
     elements: {
       analysisText: "Calculando tasa de éxito para tu caso...",
       successRate: "¡Tu caso tiene características prometedoras!",
@@ -60,32 +51,22 @@ export const quizSteps = [
   },
   {
     id: 5,
-    question: "¿CUÁNTO TIEMPO ESTUVIERON JUNTOS?",
-    description: "(La duración de la relación influye directamente en tu estrategia)",
+    question: "¿CUÁNTO TIEMPO ESTUVIERON JUNTAS?", // Pergunta adaptada
+    description: "(La duración de la relación influye directamente en tu estrategia para que él te persiga)",
     options: ["Más de 3 años", "De 1 a 3 años", "De 6 meses a 1 año", "Menos de 6 meses"],
   },
   {
     id: 6,
     question: "¿CUÁL FUE LA PARTE MÁS DOLOROSA DE LA RUPTURA?",
-    description: "(Identificar tu dolor principal es esencial para tu recuperación emocional y reconquista)",
-    options: {
-      masculino: [
-        "😔 Lidiar con la soledad y el vacío",
-        "😢 La montaña rusa emocional: ira, tristeza, arrepentimiento",
-        "😐 Lidiar con recuerdos y memorias",
-        "💔 Imaginarla con otro hombre",
-        "🤔 Darme cuenta de que los planes que hicimos nunca se harán realidad",
-        "⚡ Otro",
-      ],
-      feminino: [
-        "😔 Lidiar con la soledad y el vacío",
-        "😢 La montaña rusa emocional: ira, tristeza, arrepentimiento",
-        "😐 Lidiar con recuerdos y memorias",
-        "💔 Imaginarlo con otra mujer",
-        "🤔 Darme cuenta de que los planes que hicimos nunca se harán realidad",
-        "⚡ Otro",
-      ],
-    },
+    description: "(Identificar tu dolor principal es esencial para tu recuperación emocional y para que él te deseje)",
+    options: [
+      "😔 Lidiar con la soledad y el vacío",
+      "😢 La montaña rusa emocional: ira, tristeza, arrepentimiento",
+      "😐 Lidiar con recuerdos y memorias",
+      "💔 Imaginarlo con otra mujer", // Adaptado para mulher
+      "�� Darme cuenta de que los planes que hicimos nunca se harán realidad",
+      "⚡ Otro",
+    ], // Usando apenas a opção feminina
     elements: {
       profileAnalysis: "Personalizando tu estrategia emocional...",
       profileComplete: "46%",
@@ -93,59 +74,33 @@ export const quizSteps = [
   },
   {
     id: 7,
-    question: {
-      masculino: "¿CUÁL ES TU SITUACIÓN ACTUAL CON TU EX?",
-      feminino: "¿CUÁL ES TU SITUACIÓN ACTUAL CON TU EX?",
-    },
-    description: "(Esta información determinará tu punto de partida en el PLAN A)",
-    options: {
-      masculino: [
-        "🧐 Estoy aplicando contacto cero",
-        "😢 Ella me ignora completamente",
-        "❌ Me ha bloqueado en todas las redes sociales",
-        "🤝 Hablamos solo de cosas necesarias",
-        "🤔 Charlamos de vez en cuando",
-        "😌 Seguimos siendo amigos",
-        "🔥 Hemos tenido encuentros íntimos después de la ruptura",
-      ],
-      feminino: [
-        "🧐 Estoy aplicando contacto cero",
-        "😢 Él me ignora completamente",
-        "❌ Me ha bloqueado en todas las redes sociales",
-        "🤝 Hablamos solo de cosas necesarias",
-        "🤔 Charlamos de vez en cuando",
-        "😌 Seguimos siendo amigos",
-        "🔥 Hemos tenido encuentros íntimos después de la ruptura",
-      ],
-    },
+    question: "¿CUÁL ES TU SITUACIÓN ACTUAL CON TU EX?", // Pergunta adaptada
+    description: "(Esta información determinará tu punto de partida para que él te busque sin parar)",
+    options: [
+      "🧐 Estoy aplicando contacto cero",
+      "😢 Él me ignora completamente", // Adaptado para mulher
+      "❌ Me ha bloqueado en todas las redes sociales",
+      "�� Hablamos solo de cosas necesarias",
+      "🤔 Charlamos de vez en cuando",
+      "😌 Seguimos siendo amigos",
+      "🔥 Hemos tenido encuentros íntimos después de la ruptura",
+    ], // Usando apenas a opção feminina
     elements: {
       profileComplete: "62%",
-      testimonialImage: "",
+      testimonialImage: "", // Será substituída por uma imagem feminina
     },
   },
   {
     id: 8,
-    question: {
-      masculino: "¿ELLA YA ESTÁ SALIENDO CON OTRA PERSONA?",
-      feminino: "¿ÉL YA ESTÁ SALIENDO CON OTRA PERSONA?",
-    },
-    description: "(Esta información es crucial para definir tu enfoque estratégico)",
-    options: {
-      masculino: [
-        "🚫 No, está soltera",
-        "🤔 No estoy seguro",
-        "😔 Sí, está saliendo con alguien",
-        "💔 Sí, tiene una relación seria",
-        "🔄 Está saliendo con varias personas",
-      ],
-      feminino: [
-        "🚫 No, está soltero",
-        "🤔 No estoy segura",
-        "😔 Sí, está saliendo con alguien",
-        "💔 Sí, tiene una relación seria",
-        "🔄 Está saliendo con varias personas",
-      ],
-    },
+    question: "¿ÉL YA ESTÁ SALIENDO CON OTRA PERSONA?", // Pergunta adaptada
+    description: "(Esta información es crucial para definir tu enfoque estratégico y hacer que él la olvide)",
+    options: [
+      "🚫 No, está soltero", // Adaptado para mulher
+      "�� No estoy segura", // Adaptado para mulher
+      "😔 Sí, está saliendo con alguien",
+      "💔 Sí, tiene una relación seria",
+      "🔄 Está saliendo con varias personas",
+    ], // Usando apenas a opção feminina
     bonusUnlock: {
       id: 2,
       title: "PROTOCOLO DE EMERGENCIA 72H",
@@ -158,15 +113,12 @@ export const quizSteps = [
   },
   {
     id: 9,
-    question: {
-      masculino: "¿CUÁNTO QUIERES RECUPERARLA?",
-      feminino: "¿CUÁNTO QUIERES RECUPERARLO?",
-    },
-    description: "(Tu nivel de compromiso determinará tu éxito)",
+    question: "¿CUÁNTO QUIERES RECUPERARLO Y HACERLO OBSESIVO POR TI?", // Pergunta adaptada
+    description: "(Tu nivel de compromiso determinará tu éxito para que él te persiga)",
     subtext:
-      "El 91% de las personas que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando el PLAN A.",
-    options: ["1 - No estoy seguro", "2 - Me lo estoy pensando", "3 - Lo quiero bastante", "4 - Lo quiero muchísimo"],
-    note: "Solo trabajo con personas decididas a transformar su situación amorosa. El PLAN A fue desarrollado para quien está preparado para actuar.",
+      "El 91% de las mujeres que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando la fórmula de Mensajes Obsesivas.", // Adaptado para mulheres
+    options: ["1 - No estoy segura", "2 - Me lo estoy pensando", "3 - Lo quiero bastante", "4 - Lo quiero muchísimo"], // Adaptado para mulheres
+    note: "Solo trabajo con mujeres decididas a transformar su situación amorosa. La fórmula de Mensajes Obsesivas fue desarrollada para quien está preparada para actuar.", // Adaptado para mulheres
     elements: {
       thermometer: true,
       profileComplete: "85%",
@@ -174,14 +126,14 @@ export const quizSteps = [
   },
   {
     id: 10,
-    question: "EXPERTO ANALIZANDO TU CASO...",
+    question: "EXPERTA ANALIZANDO TU CASO...", // Adaptado para especialista feminina
     description: "Espera mientras analizo tus respuestas para crear tu estrategia personalizada.",
     options: [],
     autoAdvance: true,
     elements: {
       expertPhoto: true,
-      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png",
-      autoMessage: "Basándome en 7 años de experiencia ayudando a personas como tú...",
+      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png", // Substituir por imagem de mulher
+      autoMessage: "Basándome en 7 años de experiencia ayudando a mujeres como tú...", // Adaptado para mulheres
       profileComplete: "90%",
     },
   },
@@ -189,36 +141,36 @@ export const quizSteps = [
     id: 11,
     question: "¡FELICITACIONES! He analizado tus respuestas y tengo buenas noticias para ti.",
     description:
-      "Basándome en tu perfil y situación específica, el PLAN A tiene un 90,5% de probabilidades de funcionar en tu caso.",
+      "Basándome en tu perfil y situación específica, la fórmula de Mensajes Obsesivas tiene un 90,5% de probabilidades de hacer que él te desee obsesivamente.", // Adaptado para a promessa
     options: ["¿VAMOS AL SIGUIENTE PASO?"],
-    note: "Estoy aquí para guiarte personalmente en este viaje de reconquista. En los últimos 7 años, he ayudado a más de 3.847 personas a recuperar sus relaciones usando este método exclusivo.",
+    note: "Estoy aquí para guiarte personalmente en este viaje de obsesión. En los últimos 7 años, he ayudado a más de 3.847 mujeres a tener a sus hombres obsesionados usando este método exclusivo.", // Adaptado para mulheres
     elements: {
       expertPhoto: true,
-      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png",
+      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png", // Substituir por imagem de mulher
       profileComplete: "95%",
-      helpedCounter: "Personas ayudadas hoy: 17",
+      helpedCounter: "Mujeres ayudadas hoy: 17", // Adaptado para mulheres
       compatibilityCalc: "90,5%",
     },
   },
   {
     id: 12,
     question: "RESULTADOS COMPROBADOS",
-    subtext: "EL 91% DE MIS ESTUDIANTES VIERON RESULTADOS ESPECTACULARES EN LOS PRIMEROS 7 DÍAS APLICANDO EL PLAN A",
+    subtext: "EL 91% DE MIS ESTUDIANTES VIERON RESULTADOS ESPECTACULARES EN LOS PRIMEROS 7 DÍAS APLICANDO LA FÓRMULA DE MENSAJES OBSESIVAS",
     description: "",
     options: ["¡YO TAMBIÉN QUIERO ESOS RESULTADOS!"],
     elements: {
       bigNumber: "91%",
       profileComplete: "98%",
-      testimonialImage: "https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-nova-espanha-face.png",
+      testimonialImage: "https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-nova-espanha-face.png", // Substituir por imagem de mulher
     },
   },
   {
     id: 13,
     question: "¡INCREÍBLE! TU PERFIL REVELA ALGO SORPRENDENTE...",
     description:
-      "Basándome en tus respuestas, he identificado 3 patrones específicos que aumentan dramáticamente tus posibilidades de éxito.",
+      "Basándome en tus respuestas, he identificado 3 patrones específicos que aumentan dramáticamente tus posibilidades de éxito para que él te persiga.", // Adaptado para a promessa
     subtext:
-      "El 94% de las personas con tu perfil exacto lograron resultados extraordinarios cuando aplicaron la estrategia correcta.",
+      "El 94% de las mujeres con tu perfil exacto lograron resultados extraordinarios cuando aplicaron la estrategia correcta.", // Adaptado para mulheres
     options: ["¡QUIERO CONOCER MI PERFIL COMPLETO!"],
     note: "⚠️ IMPORTANTE: Esta información es muy específica para tu situación. Solo la compartiré contigo en la siguiente pantalla.",
     elements: {
@@ -233,9 +185,9 @@ export const quizSteps = [
     question: "ÚLTIMO PASO: VALIDANDO TU ESTRATEGIA PERSONALIZADA",
     description: "Estoy preparando tu plan específico basado en los 3 patrones únicos que identifiqué en tu caso.",
     subtext:
-      "En los próximos segundos verás exactamente por qué tu situación tiene características tan prometedoras...",
+      "En los próximos segundos verás exactamente por qué tu situación tiene características tan prometedoras para que él te desee obsesivamente...", // Adaptado para a promessa
     options: ["¡SÍ, QUIERO VER MI ESTRATEGIA AHORA!"],
-    note: "🎯 Tu estrategia personalizada incluye los pasos exactos que funcionaron para personas en tu misma situación.",
+    note: "🎯 Tu estrategia personalizada incluye los pasos exactos que funcionaron para mujeres en tu misma situación.", // Adaptado para mulheres
     elements: {
       finalValidation: true,
       profileComplete: "100%",
@@ -264,49 +216,60 @@ export const bonuses = [
 
 export const testimonials = [
   {
-    name: "Carlos M., 34 años",
-    text: "¡Volvió a responderme al 3er día y me propuso vernos al 6º día!",
+    name: "Emília, 29 años", // Nome feminino
+    text: "Usé la 'Bomba de Deseo' hoy y, ¡guau! Digamos que tuve que desactivar mis notificaciones. ¡Él no paraba de buscarme!", // Depoimento adaptado
     rating: 5,
   },
   {
-    name: "Rafael, 32 años",
-    text: "Estaba perdido después de la ruptura. El Plan A me dio dirección y confianza. ¡Hoy estamos más unidos que nunca!",
+    name: "Sofía, 31 años", // Nome feminino
+    text: "De ser 'una más', él me envió un mensaje como 'la ÚNICA' en su mente: ¡este método es oro puro!", // Depoimento adaptado
     rating: 5,
   },
   {
-    name: "André, 28 años",
-    text: "En solo 2 semanas siguiendo el Plan A, logré reconquistar a mi ex. ¡Los guiones funcionaron perfectamente!",
+    name: "Olivia, 35 años", // Nome feminino
+    text: "Toda mujer necesita este libro. Es como un arma secreta para el mundo moderno de las citas.", // Depoimento adaptado
     rating: 5,
   },
   {
-    name: "Marcelo, 41 años",
-    text: "Después de 6 meses separados, pensé que ya no tenía oportunidad. En el día 12 del Plan A me llamó llorando queriendo volver.",
+    name: "Isabella, 27 años", // Nome feminino
+    text: "Enviar la 'Mensaje del Arrepentimiento' fue tan satisfactorio. ¡Hizo que él recordara nuestros momentos en un instante!", // Depoimento adaptado
+    rating: 5,
+  },
+  {
+    name: "Mia, 33 años", // Nome feminino
+    text: "Después de probar 'Mensajes Obsesivas', nuestra comunicación cambió por completo. ¡Ahora tenemos conversaciones profundas, de corazón a corazón, todas las noches!", // Depoimento adaptado
+    rating: 5,
+  },
+  {
+    name: "Abigail, 25 años", // Nome feminino
+    text: "Honestamente, pensé que esto era solo otro truco. ¿Pero el cambio inmediato en sus respuestas? ¡Me quedé impresionada!", // Depoimento adaptado
     rating: 5,
   },
 ]
 
 export const socialProofMessages = [
-  "¡Estás entre el 17% más decidido a reconquistar!",
-  "¡Tu perfil muestra compatibilidad!",
+  "¡Estás entre el 17% más decidido a que él te persiga!", // Adaptado
+  "¡Tu perfil muestra compatibilidad con la obsesión masculina!", // Adaptado
   "¡Bonificación liberada por desbloqueo!",
   "¡Has desbloqueado los 2 bonos - valor total de $84!",
-  "El 87% de las personas en tu situación lograron resultados en menos de 14 días",
-  "Estás más comprometido que el 73% de las personas que hicieron esta prueba",
+  "El 87% de las mujeres en tu situación lograron resultados en menos de 14 días", // Adaptado
+  "Estás más comprometida que el 73% de las mujeres que hicieron esta prueba", // Adaptado
   "-",
   "-",
   "-",
   "-",
 ]
 
-// Función utilitaria para personalizar textos basados en el género
-export function getPersonalizedContent(content: any, gender: string) {
+// Função utilitaria para personalizar textos basada en el género (mantida para compatibilidade, mas o quiz agora é focado em feminino)
+export function getPersonalizedContent(content, gender) {
   if (typeof content === "string") {
     return content
   }
 
   if (typeof content === "object" && content !== null) {
+    // Como o quiz agora é focado em feminino, sempre retornamos a versão feminina se houver
     if (content.masculino && content.feminino) {
-      return gender === "MASCULINO" ? content.masculino : content.feminino
+      return content.feminino // Força a versão feminina
     }
     return content
   }
