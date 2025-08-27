@@ -67,7 +67,7 @@ export default function ResultPageOptimized() {
     } catch (error) {
       console.error("Error al registrar evento de clic:", error)
     }
-    window.open("https://pay.hotmart.com/F100142422S?off=qqcmu6vg&checkoutMode=10", "_blank")
+    window.open("https://pay.hotmart.com/R101603790B?checkoutMode=10", "_blank")
   }
 
   // Função simplificada, já que o alvo é sempre "ele"
