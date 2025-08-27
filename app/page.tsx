@@ -244,7 +244,7 @@ export default function HomePage() {
             {/* LOGO CENTRALIZADA - IMAGEM WEBP OTIMIZADA */}
             <div className="logo-container">
               <Image
-                src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/nova-capa.webp" // Substituir pela logo da sua oferta
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/Untitled-design.webp" // Substituir pela logo da sua oferta
                 alt="Logo Mensajes Obsesivas" // Alt text atualizado
                 width={200}
                 height={120}
