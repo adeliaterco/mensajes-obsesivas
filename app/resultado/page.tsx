@@ -556,7 +556,7 @@ export default function ResultPageOptimized() {
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gray-200 overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
                   {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                   <img
-                    src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/Captura-de-Tela-2025-08-08-as-19.24.05.png" // Placeholder
+                    src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Placeholder
                     alt="Emília R."
                     className="w-full h-full object-cover"
                   />
