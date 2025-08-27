@@ -308,7 +308,7 @@ export default function ResultPageOptimized() {
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
-                          src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/Captura-de-Tela-2025-08-08-as-19.01.05.png" // Placeholder
+                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Placeholder
                           alt="Sofía S."
                           className="w-full h-full object-cover"
                         />
@@ -376,7 +376,7 @@ export default function ResultPageOptimized() {
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
-                          src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/Captura-de-Tela-2025-08-08-as-19.01.05.png" // Placeholder
+                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/1-dobra-1-e1756257363224.webp" // Placeholder
                           alt="Sofía S."
                           className="w-full h-full object-cover"
                         />
