@@ -317,7 +317,7 @@ export default function HomePage() {
         <div className="depoimento">
           <div className="avatar">
             <Image
-              src="https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-pv-inicial.webp" // Substituir por imagem de mulher
+              src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Substituir por imagem de mulher
               alt="Emília R." // Nome feminino
               width={55}
               height={55}
