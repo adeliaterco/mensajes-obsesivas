@@ -217,7 +217,7 @@ export default function ResultPageOptimized() {
         </div>
       </div>
 
-      {/* SECCIÓN MOCKUP DE CELULAR CON MENSAJES SECRETOS */}
+      {/* SECCIÓN MOCKUP DE CELULAR CON MENSAJES SECRETOS (VSL Principal) */}
       <div className="px-4 py-8 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -231,9 +231,9 @@ export default function ResultPageOptimized() {
             </p>
           </div>
 
-          {/* MOCKUP DE CELULAR */}
+          {/* MOCKUP DE CELULAR PRINCIPAL - TAMANHO AJUSTADO */}
           <div className="flex justify-center mb-8">
-            <div className="phone-mockup w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+            <div className="phone-mockup main-phone w-full max-w-sm"> {/* max-w-sm para o celular principal */}
               <div className="screen">
                 <div className="header">
                   <span className="time">9:41</span>
@@ -282,25 +282,25 @@ export default function ResultPageOptimized() {
           {/* Call to Action após o mockup */}
           <div className="text-center">
             <div className="bg-orange-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full inline-block font-bold text-sm sm:text-lg mb-4 animate-bounce">
-              👆 APLICA ESTO Y VERÁS RESULTADOS EN DÍAS
+              �� APLICA ESTO Y VERÁS RESULTADOS EN DÍAS
             </div>
 
-            {/* 🔥 SEÇÃO DE DEPOIMENTOS EM IMAGEM CLICÁVEL - CENTRALIZADO */}
+            {/* �� SEÇÃO DE DEPOIMENTOS EM CELULAR MOBILE - CENTRALIZADO */}
             <div className="my-8">
               <div className="text-center mb-6">
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                  💬 <span className="text-orange-400">TESTIMONIOS REALES </span> DE QUIEN YA LO LOGRÓ
+                  �� <span className="text-orange-400">TESTIMONIOS REALES </span> DE QUIEN YA LO LOGRÓ
                 </h3>
                 <p className="text-gray-300 text-sm sm:text-base px-4">
                   Escucha las historias de mujeres que hicieron que él se obsesionara con ellas
                 </p>
               </div>
 
-              {/* Container dos Stories Centralizados */}
+              {/* Container dos Stories Centralizados - Agora com 2 celulares */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
                 
-                {/* TESTIMONIO 1 - Emília (IMAGEM CLICÁVEL) */}
-                <div className="w-full max-w-xs">
+                {/* TESTIMONIO 1 - Emília (CELULAR DE DEPOIMENTO) */}
+                <div className="w-full max-w-xs"> {/* max-w-xs para os celulares de depoimento */}
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
                     {/* Header do Story 1 */}
@@ -317,18 +317,39 @@ export default function ResultPageOptimized() {
                       </div>
                     </div>
 
-                    {/* IMAGEM CLICÁVEL DE DEPOIMENTO 1 */}
-                    <a href="https://seulink.com/depoimento-emilia" target="_blank" rel="noopener noreferrer" className="block relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden group">
-                      {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER (prévia do depoimento) */}
-                      <img 
-                        src="https://via.placeholder.com/320x568/FFD700/000000?text=Depoimento+Emilia" // Placeholder
-                        alt="Depoimento de Emília"
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Play className="w-12 h-12 text-white" />
+                    {/* CELULAR DE DEPOIMENTO 1 */}
+                    <div className="phone-mockup testimonial-phone">
+                      <div className="screen">
+                        <div className="header">
+                          <span className="time">10:15</span>
+                          <div className="icons">
+                            <span className="signal"></span>
+                            <span className="wifi"></span>
+                            <span className="battery"></span>
+                          </div>
+                        </div>
+                        <div className="chat-area">
+                          <div className="message received">
+                            <p>No puedo creerlo, ¡funciona!</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Mi ex me bloqueó y me dijo que nunca más me vería...</p>
+                          </div>
+                          <div className="message received">
+                            <p>¿Y ahora?</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Seguí los 'Mensajes Obsesivas' al pie de la letra. En 17 días, me llamó llorando pidiendo volver. ¡Estamos comprometidos!</p>
+                          </div>
+                          <div className="message received">
+                            <p>¡Increíble! ¿Y él?</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Está más obsesionado que nunca. ¡Gracias por esta fórmula!</p>
+                          </div>
+                        </div>
                       </div>
-                    </a>
+                    </div>
 
                     {/* Footer com CTA 1 */}
                     <div className="p-2 text-center">
@@ -344,8 +365,8 @@ export default function ResultPageOptimized() {
                   </div>
                 </div>
 
-                {/* TESTIMONIO 2 - Sofía S. (IMAGEM CLICÁVEL) */}
-                <div className="w-full max-w-xs">
+                {/* TESTIMONIO 2 - Sofía S. (CELULAR DE DEPOIMENTO) */}
+                <div className="w-full max-w-xs"> {/* max-w-xs para os celulares de depoimento */}
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
                     {/* Header do Story 2 */}
@@ -364,18 +385,39 @@ export default function ResultPageOptimized() {
                       </div>
                     </div>
 
-                    {/* IMAGEM CLICÁVEL DE DEPOIMENTO 2 */}
-                    <a href="https://seulink.com/depoimento-sofia" target="_blank" rel="noopener noreferrer" className="block relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden group">
-                      {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER (prévia do depoimento) */}
-                      <img 
-                        src="https://via.placeholder.com/320x568/FF6347/000000?text=Depoimento+Sofia" // Placeholder
-                        alt="Depoimento de Sofía"
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Play className="w-12 h-12 text-white" />
+                    {/* CELULAR DE DEPOIMENTO 2 */}
+                    <div className="phone-mockup testimonial-phone">
+                      <div className="screen">
+                        <div className="header">
+                          <span className="time">11:30</span>
+                          <div className="icons">
+                            <span className="signal"></span>
+                            <span className="wifi"></span>
+                            <span className="battery"></span>
+                          </div>
+                        </div>
+                        <div className="chat-area">
+                          <div className="message received">
+                            <p>Pensé que no había esperanza.</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Él siempre me ignoraba, sentía que era una más...</p>
+                          </div>
+                          <div className="message received">
+                            <p>¿Qué hiciste?</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Apliqué el 'Mensaje de la Única' y el 'Protocolo de Emergencia'. Su actitud cambió radicalmente.</p>
+                          </div>
+                          <div className="message received">
+                            <p>¿Y ahora?</p>
+                          </div>
+                          <div className="message sent">
+                            <p>Ahora me busca, me valora y me ve como la mujer más importante de su vida. ¡Es mágico!</p>
+                          </div>
+                        </div>
                       </div>
-                    </a>
+                    </div>
 
                     {/* Footer com CTA 2 */}
                     <div className="p-2 text-center">
@@ -393,7 +435,7 @@ export default function ResultPageOptimized() {
 
               </div>
             </div>
-            {/* 🔥 FIM DA SEÇÃO DE DEPOIMENTOS EM IMAGEM CLICÁVEL */}
+            {/* 🔥 FIM DA SEÇÃO DE DEPOIMENTOS EM CELULAR MOBILE */}
 
             <p className="text-white text-sm sm:text-lg font-semibold px-4">
               Ahora que conoces la fórmula, es hora de <span className="text-orange-400">ponerla en práctica</span>
@@ -784,7 +826,7 @@ export default function ResultPageOptimized() {
           overflow-x: hidden;
         }
 
-        /* Estilos para o Mockup de Celular */
+        /* Estilos base para o Mockup de Celular */
         .phone-mockup {
           background: #222;
           border-radius: 36px;
@@ -881,9 +923,42 @@ export default function ResultPageOptimized() {
           border-bottom-right-radius: 4px;
         }
 
+        /* Animação para mensagens */
         @keyframes fadeInMessage {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ajustes de tamanho para os celulares */
+        .phone-mockup.main-phone {
+          max-width: 384px; /* max-w-sm */
+        }
+
+        .phone-mockup.testimonial-phone {
+          max-width: 280px; /* Um pouco menor que max-w-xs (320px) */
+          padding: 8px; /* Reduzir o padding para caber mais conteúdo */
+          border-radius: 28px;
+        }
+
+        .phone-mockup.testimonial-phone::before {
+          width: 80px;
+          height: 8px;
+        }
+
+        .phone-mockup.testimonial-phone .screen {
+          border-radius: 20px;
+        }
+
+        .phone-mockup.testimonial-phone .header {
+          padding: 6px 12px;
+          font-size: 10px;
+        }
+
+        .phone-mockup.testimonial-phone .message {
+          font-size: 12px;
+          padding: 8px 10px;
+          border-radius: 16px;
+          gap: 8px;
         }
 
         /* Otimizações específicas para mobile */
@@ -999,14 +1074,14 @@ export default function ResultPageOptimized() {
 
           /* Testimonios responsivos */
           .flex-col.sm\:flex-row {
-            flex-direction: row !important;
+            flex-direction: column !important; /* Forçar coluna em mobile */
             justify-content: center !important;
-            align-items: flex-start !important;
+            align-items: center !important;
           }
 
           .flex-col.sm\:flex-row > div {
             width: 100% !important;
-            max-width: 320px !important;
+            max-width: 280px !important; /* Manter o max-width para os celulares de depoimento */
             margin: 0 auto !important;
           }
         }
@@ -1052,17 +1127,17 @@ export default function ResultPageOptimized() {
           justify-content: center;
         }
 
-        /* Otimizações específicas para stories lado a lado */
+        /* Otimizações específicas para stories lado a lado em telas maiores */
         @media (min-width: 640px) {
           .flex-col.sm\:flex-row {
-            flex-direction: row !important;
+            flex-direction: row !important; /* Voltar para linha em telas maiores */
             justify-content: center !important;
             align-items: flex-start !important;
           }
 
           .flex-col.sm\:flex-row > div {
             flex: 0 0 auto !important;
-            width: 320px !important;
+            width: auto !important; /* Deixar o width ser definido pelo max-width */
           }
         }
 
