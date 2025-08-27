@@ -245,7 +245,7 @@ export default function HomePage() {
             <div className="logo-container">
               <Image
                 src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/Untitled-design.webp" // Substituir pela logo da sua oferta
-                alt="Logo Mensajes Obsesivos" // Alt text atualizado
+                alt="Logo Mensajes Obsesivas" // Alt text atualizado
                 width={200}
                 height={120}
                 className="logo-arredondada"
@@ -333,13 +333,13 @@ export default function HomePage() {
             <div className="estrelas">★★★★★</div>
             <div className="nome-usuario">Emília R. (@EmiliaR)</div> {/* Nome feminino */}
             <div className="texto-depoimento">
-              "Apliqué la fórmula de Mensajes Obsesivos y en 2 semanas él volvió, ¡más obsesionado que nunca! Sin juegos mentales, ¡simplemente funciona!"
+              "Apliqué la fórmula de Mensajes Obsesivas y en 2 semanas él volvió, ¡más obsesionado que nunca! Sin juegos mentales, ¡simplemente funciona!"
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="copyright">Mensajes Obsesivos™ Todos los Derechos Reservados.</div> {/* Nome da oferta */}
+        <div className="copyright">Mensajes Obsesivas™ Todos los Derechos Reservados.</div> {/* Nome da oferta */}
 
         <style jsx>{`
           @keyframes spin {
