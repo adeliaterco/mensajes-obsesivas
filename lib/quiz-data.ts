@@ -146,7 +146,7 @@ export const quizSteps = [
     note: "Estoy aquí para guiarte personalmente en este viaje de obsesión. En los últimos 7 años, he ayudado a más de 3.847 mujeres a tener a sus hombres obsesionados usando este método exclusivo.", // Adaptado para mulheres
     elements: {
       expertPhoto: true,
-      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png", // Substituir por imagem de mulher
+      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png", // Substituir por imagem de mulher
       profileComplete: "95%",
       helpedCounter: "Mujeres ayudadas hoy: 17", // Adaptado para mulheres
       compatibilityCalc: "90,5%",
