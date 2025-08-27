@@ -132,7 +132,7 @@ export const quizSteps = [
     autoAdvance: true,
     elements: {
       expertPhoto: true,
-      expertImage: "https://optimalhealthscout.shop/wp-content/uploads/2025/06/imagem_gerada-2025-06-01T212625.544.png", // Substituir por imagem de mulher
+      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png", // Substituir por imagem de mulher
       autoMessage: "Basándome en 7 años de experiencia ayudando a mujeres como tú...", // Adaptado para mulheres
       profileComplete: "90%",
     },
