@@ -27,7 +27,6 @@ export default function ResultPageOptimized() {
   const [totalValue, setTotalValue] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
   const [recentBuyers, setRecentBuyers] = useState(3)
-  // Removido userGender, pois o quiz agora é focado em feminino para masculino
   const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -218,7 +217,7 @@ export default function ResultPageOptimized() {
         </div>
       </div>
 
-      {/* VÍDEO VSL - POSICIÓN ESTRATÉGICA - CENTRALIZADO */}
+      {/* SECCIÓN MOCKUP DE CELULAR CON MENSAJES SECRETOS */}
       <div className="px-4 py-8 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -232,28 +231,61 @@ export default function ResultPageOptimized() {
             </p>
           </div>
 
-          {/* VÍDEO PRINCIPAL CENTRALIZADO */}
+          {/* MOCKUP DE CELULAR */}
           <div className="flex justify-center mb-8">
-            <div className="w-full max-w-3xl">
-              <div className="relative bg-black rounded-2xl p-2 sm:p-4 border-4 border-orange-500 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20 rounded-2xl animate-pulse"></div>
-                <div className="relative z-10">
-                  {/* NOTA IMPORTANTE: O VÍDEO AQUI DEVE SER SUBSTITUÍDO POR UM VÍDEO COM UMA MULHER FALANDO SOBRE O MÉTODO */}
-                  <script src="https://fast.wistia.com/player.js" async></script>
-                  <script src="https://fast.wistia.com/embed/6fyiaz12pl.js" async type="module"></script>
-                  <wistia-player media-id="6fyiaz12pl" aspect="1.7877094972067038"></wistia-player>
+            <div className="phone-mockup w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+              <div className="screen">
+                <div className="header">
+                  <span className="time">9:41</span>
+                  <div className="icons">
+                    <span className="signal"></span>
+                    <span className="wifi"></span>
+                    <span className="battery"></span>
+                  </div>
+                </div>
+                <div className="chat-area">
+                  <div className="message received">
+                    <p>¿Qué es lo que realmente lo hace obsesionarse?</p>
+                  </div>
+                  <div className="message sent">
+                    <p>Es más simple de lo que crees. Son mensajes específicos...</p>
+                  </div>
+                  <div className="message received">
+                    <p>¿Mensajes? ¿Cómo cuáles?</p>
+                  </div>
+                  <div className="message sent">
+                    <p>
+                      Los que activan su "cerebro reptiliano". Por ejemplo, el "Mensaje del Deseo Incontrolable"...
+                    </p>
+                  </div>
+                  <div className="message received">
+                    <p>¡Cuéntame más! ¿Y si ya tiene a otra?</p>
+                  </div>
+                  <div className="message sent">
+                    <p>
+                      Hay una secuencia para eso: el "Mensaje del Olvido" y el "Mensaje de la Única".
+                    </p>
+                  </div>
+                  <div className="message received">
+                    <p>¿Y si no responde?</p>
+                  </div>
+                  <div className="message sent">
+                    <p>
+                      La clave no es solo qué decir, sino cuándo y cómo. La "Fórmula de la Persecución Inversa" lo garantiza.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Call to Action após o vídeo */}
+          {/* Call to Action após o mockup */}
           <div className="text-center">
             <div className="bg-orange-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full inline-block font-bold text-sm sm:text-lg mb-4 animate-bounce">
               👆 APLICA ESTO Y VERÁS RESULTADOS EN DÍAS
             </div>
 
-            {/* 🔥 SEÇÃO DE DEPOIMENTOS EM VÍDEO STORY - CENTRALIZADO */}
+            {/* 🔥 SEÇÃO DE DEPOIMENTOS EM IMAGEM CLICÁVEL - CENTRALIZADO */}
             <div className="my-8">
               <div className="text-center mb-6">
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
@@ -267,7 +299,7 @@ export default function ResultPageOptimized() {
               {/* Container dos Stories Centralizados */}
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
                 
-                {/* TESTIMONIO 1 - Emília (ADAPTADO) */}
+                {/* TESTIMONIO 1 - Emília (IMAGEM CLICÁVEL) */}
                 <div className="w-full max-w-xs">
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
@@ -285,17 +317,18 @@ export default function ResultPageOptimized() {
                       </div>
                     </div>
 
-                    {/* Vídeo Story 1 */}
-                    <div className="relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden" style={{height: '280px'}}>
-                      {/* NOTA: SUBSTITUIR POR VÍDEO DE MULHER */}
-                      <script src="https://fast.wistia.com/player.js" async></script>
-                      <script src="https://fast.wistia.com/embed/3rj8vdh574.js" async type="module"></script>
-                      <wistia-player 
-                        media-id="3rj8vdh574" 
-                        aspect="0.5625"
-                        className="w-full h-full"
-                      ></wistia-player>
-                    </div>
+                    {/* IMAGEM CLICÁVEL DE DEPOIMENTO 1 */}
+                    <a href="https://seulink.com/depoimento-emilia" target="_blank" rel="noopener noreferrer" className="block relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden group">
+                      {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER (prévia do depoimento) */}
+                      <img 
+                        src="https://via.placeholder.com/320x568/FFD700/000000?text=Depoimento+Emilia" // Placeholder
+                        alt="Depoimento de Emília"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Play className="w-12 h-12 text-white" />
+                      </div>
+                    </a>
 
                     {/* Footer com CTA 1 */}
                     <div className="p-2 text-center">
@@ -311,7 +344,7 @@ export default function ResultPageOptimized() {
                   </div>
                 </div>
 
-                {/* TESTIMONIO 2 - Sofía S. (ADAPTADO) */}
+                {/* TESTIMONIO 2 - Sofía S. (IMAGEM CLICÁVEL) */}
                 <div className="w-full max-w-xs">
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
@@ -331,17 +364,18 @@ export default function ResultPageOptimized() {
                       </div>
                     </div>
 
-                    {/* Vídeo Story 2 */}
-                    <div className="relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden" style={{height: '280px'}}>
-                      {/* NOTA: SUBSTITUIR POR VÍDEO DE MULHER */}
-                      <script src="https://fast.wistia.com/player.js" async></script>
-                      <script src="https://fast.wistia.com/embed/u24vsbymvw.js" async type="module"></script>
-                      <wistia-player 
-                        media-id="u24vsbymvw" 
-                        aspect="0.5625"
-                        className="w-full h-full"
-                      ></wistia-player>
-                    </div>
+                    {/* IMAGEM CLICÁVEL DE DEPOIMENTO 2 */}
+                    <a href="https://seulink.com/depoimento-sofia" target="_blank" rel="noopener noreferrer" className="block relative aspect-[9/16] bg-gray-900 rounded-xl overflow-hidden group">
+                      {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER (prévia do depoimento) */}
+                      <img 
+                        src="https://via.placeholder.com/320x568/FF6347/000000?text=Depoimento+Sofia" // Placeholder
+                        alt="Depoimento de Sofía"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Play className="w-12 h-12 text-white" />
+                      </div>
+                    </a>
 
                     {/* Footer com CTA 2 */}
                     <div className="p-2 text-center">
@@ -359,7 +393,7 @@ export default function ResultPageOptimized() {
 
               </div>
             </div>
-            {/* 🔥 FIM DA SEÇÃO DE DEPOIMENTOS EM VÍDEO STORY */}
+            {/* 🔥 FIM DA SEÇÃO DE DEPOIMENTOS EM IMAGEM CLICÁVEL */}
 
             <p className="text-white text-sm sm:text-lg font-semibold px-4">
               Ahora que conoces la fórmula, es hora de <span className="text-orange-400">ponerla en práctica</span>
@@ -736,7 +770,7 @@ export default function ResultPageOptimized() {
         </div>
       </div>
 
-      {/* Estilos CSS Mobile-First + Wistia */}
+      {/* Estilos CSS Mobile-First + Mockup de Celular */}
       <style jsx global>{`
         /* Reset para evitar scroll horizontal */
         html, body {
@@ -750,40 +784,106 @@ export default function ResultPageOptimized() {
           overflow-x: hidden;
         }
 
-        /* Estilos para o player Wistia */
-        wistia-player[media-id='6fyiaz12pl']:not(:defined) { 
-          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6fyiaz12pl/swatch'); 
-          display: block; 
-          filter: blur(5px); 
-          padding-top: 55.94%; 
-          border-radius: 12px;
-          width: 100%;
-          max-width: 100%;
-        }
-
-        wistia-player[media-id='u24vsbymvw']:not(:defined) { 
-          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/u24vsbymvw/swatch'); 
-          display: block; 
-          filter: blur(5px); 
-          padding-top: 177.78%; 
-          width: 100%;
-          max-width: 100%;
-        }
-
-        wistia-player[media-id='3rj8vdh574']:not(:defined) { 
-          background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/3rj8vdh574/swatch'); 
-          display: block; 
-          filter: blur(5px); 
-          padding-top: 177.78%; 
-          width: 100%;
-          max-width: 100%;
-        }
-        
-        wistia-player {
-          border-radius: 12px !important;
+        /* Estilos para o Mockup de Celular */
+        .phone-mockup {
+          background: #222;
+          border-radius: 36px;
+          padding: 12px;
+          box-shadow: 0 0 0 8px #333, 0 0 0 10px #444, 0 0 0 12px #555, 0 20px 50px rgba(0, 0, 0, 0.7);
+          position: relative;
+          aspect-ratio: 9 / 19; /* Proporção de tela de celular comum */
+          display: flex;
+          flex-direction: column;
           overflow: hidden;
-          width: 100% !important;
-          max-width: 100% !important;
+        }
+
+        .phone-mockup::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100px;
+          height: 10px;
+          background: #333;
+          border-radius: 0 0 8px 8px;
+          z-index: 2;
+        }
+
+        .phone-mockup .screen {
+          background: #1a1a1a;
+          border-radius: 24px;
+          flex-grow: 1;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        }
+
+        .phone-mockup .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 16px;
+          background: #1a1a1a;
+          color: #fff;
+          font-size: 12px;
+          font-weight: bold;
+          border-bottom: 1px solid #333;
+        }
+
+        .phone-mockup .icons span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          border-radius: 2px;
+          margin-left: 4px;
+        }
+        .phone-mockup .icons .signal { width: 8px; height: 8px; background: linear-gradient(to right, #fff 50%, transparent 50%); }
+        .phone-mockup .icons .wifi { width: 12px; height: 10px; border: 2px solid #fff; border-radius: 50%; border-bottom-color: transparent; border-left-color: transparent; border-right-color: transparent; transform: rotate(45deg); }
+        .phone-mockup .icons .battery { width: 18px; height: 10px; border: 1px solid #fff; border-radius: 2px; position: relative; }
+        .phone-mockup .icons .battery::after { content: ''; position: absolute; top: 2px; right: -3px; width: 2px; height: 6px; background: #fff; border-radius: 1px; }
+
+        .phone-mockup .chat-area {
+          flex-grow: 1;
+          padding: 15px;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background: #1a1a1a;
+        }
+
+        .phone-mockup .message {
+          max-width: 80%;
+          padding: 10px 12px;
+          border-radius: 18px;
+          font-size: 14px;
+          line-height: 1.4;
+          word-wrap: break-word;
+          animation: fadeInMessage 0.5s ease-out forwards;
+          opacity: 0;
+          transform: translateY(10px);
+        }
+
+        .phone-mockup .message.received {
+          background: #333;
+          color: #eee;
+          align-self: flex-start;
+          border-bottom-left-radius: 4px;
+        }
+
+        .phone-mockup .message.sent {
+          background: #007bff; /* Cor azul para mensagens enviadas */
+          color: #fff;
+          align-self: flex-end;
+          border-bottom-right-radius: 4px;
+        }
+
+        @keyframes fadeInMessage {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
         /* Otimizações específicas para mobile */
@@ -845,11 +945,6 @@ export default function ResultPageOptimized() {
           
           .testimonial-grid {
             grid-template-columns: 1fr !important;
-          }
-
-          /* Wistia responsivo */
-          wistia-player[media-id='6fyiaz12pl']:not(:defined) {
-            padding-top: 56.25% !important;
           }
 
           /* Flexbox melhorado para mobile */
@@ -969,12 +1064,6 @@ export default function ResultPageOptimized() {
             flex: 0 0 auto !important;
             width: 320px !important;
           }
-        }
-
-        /* Garantir que os vídeos não quebrem o layout */
-        wistia-player {
-          max-width: 100% !important;
-          height: auto !important;
         }
 
         /* Melhorar a experiência de toque nos stories */
