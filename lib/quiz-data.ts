@@ -4,7 +4,7 @@ export const quizSteps = [
     question: "¡HAZ QUE ÉL SE OBSESIONE CONTIGO Y NO TE DEJE IR JAMÁS!",
     description: "Haz la prueba rápida de 2 minutos y descubre cómo activar el 'cerebro reptiliano' de tu hombre.",
     subtext: "Este quiz es para mujeres que quieren que él las persiga sin parar:",
-    options: ["SÍ, ESTOY LISTA PARA QUE ÉL ME DESEE OBSESIVAMENTE"], // Opção única para mulheres
+    options: ["SÍ, ESTOY LISTA PARA QUE ÉL ME DESEE OBSESIVAMENTE"],
     warning:
       "⚠️ ATENCIÓN: ¡Este método es tan poderoso que solo debes usarlo si estás lista para que él te persiga sin parar!",
     elements: {
@@ -24,14 +24,14 @@ export const quizSteps = [
     ],
     elements: {
       ageIcons: true,
-      counter: "mujeres que ya hicieron la prueba hoy", // Adaptado para mulheres
+      counter: "mujeres que ya hicieron la prueba hoy",
     },
   },
   {
     id: 3,
-    question: "¿CUÁNTO TIEMPO LLEVAN SEPARADAS DE ÉL?", // Pergunta adaptada
+    question: "¿CUÁNTO TIEMPO LLEVAN SEPARADAS DE ÉL?",
     description: "(El tiempo es un factor crítico para tu estrategia de reconquista y obsesión)",
-    options: ["Menos de una semana", "Hace 1 mes", "De 2 a 6 meses", "Más de 6 meses"], // Usando apenas a opção feminina
+    options: ["Menos de una semana", "Hace 1 mes", "De 2 a 6 meses", "Más de 6 meses"],
     bonusUnlock: {
       id: 1,
       title: "21 DISPARADORES EMOCIONALES QUE FUNCIONAN",
@@ -41,9 +41,9 @@ export const quizSteps = [
   },
   {
     id: 4,
-    question: "¿CÓMO FUE SU SEPARACIÓN?", // Pergunta adaptada
+    question: "¿CÓMO FUE SU SEPARACIÓN?",
     description: "(Esta información es vital para determinar tu estrategia específica para que él se arrepienta)",
-    options: ["Él terminó conmigo", "Yo terminé con él", "Decidimos terminar de mutuo acuerdo"], // Usando apenas a opção feminina
+    options: ["Él terminó conmigo", "Yo terminé con él", "Decidimos terminar de mutuo acuerdo"],
     elements: {
       analysisText: "Calculando tasa de éxito para tu caso...",
       successRate: "¡Tu caso tiene características prometedoras!",
@@ -51,7 +51,7 @@ export const quizSteps = [
   },
   {
     id: 5,
-    question: "¿CUÁNTO TIEMPO ESTUVIERON JUNTAS?", // Pergunta adaptada
+    question: "¿CUÁNTO TIEMPO ESTUVIERON JUNTAS?",
     description: "(La duración de la relación influye directamente en tu estrategia para que él te persiga)",
     options: ["Más de 3 años", "De 1 a 3 años", "De 6 meses a 1 año", "Menos de 6 meses"],
   },
@@ -63,10 +63,10 @@ export const quizSteps = [
       "😔 Lidiar con la soledad y el vacío",
       "😢 La montaña rusa emocional: ira, tristeza, arrepentimiento",
       "😐 Lidiar con recuerdos y memorias",
-      "💔 Imaginarlo con otra mujer", // Adaptado para mulher
-      "�� Darme cuenta de que los planes que hicimos nunca se harán realidad",
+      "💔 Imaginarlo con otra mujer",
+      "📅 Darme cuenta de que los planes que hicimos nunca se harán realidad",
       "⚡ Otro",
-    ], // Usando apenas a opção feminina
+    ],
     elements: {
       profileAnalysis: "Personalizando tu estrategia emocional...",
       profileComplete: "46%",
@@ -74,33 +74,89 @@ export const quizSteps = [
   },
   {
     id: 7,
-    question: "¿CUÁL ES TU SITUACIÓN ACTUAL CON TU EX?", // Pergunta adaptada
+    question: "¿CUÁL ES TU SITUACIÓN ACTUAL CON TU EX?",
     description: "(Esta información determinará tu punto de partida para que él te busque sin parar)",
     options: [
       "🧐 Estoy aplicando contacto cero",
-      "😢 Él me ignora completamente", // Adaptado para mulher
+      "😢 Él me ignora completamente",
       "❌ Me ha bloqueado en todas las redes sociales",
-      "�� Hablamos solo de cosas necesarias",
+      "📞 Hablamos solo de cosas necesarias",
       "🤔 Charlamos de vez en cuando",
       "😌 Seguimos siendo amigos",
       "🔥 Hemos tenido encuentros íntimos después de la ruptura",
-    ], // Usando apenas a opção feminina
+    ],
     elements: {
       profileComplete: "62%",
-      testimonialImage: "", // Será substituída por uma imagem feminina
+      testimonialImage: `
+        <div className="depoimentos-container" style="display: flex; flex-direction: column; gap: 20px; margin: 20px 0;">
+          {/* DEPOIMENTO 1 - Laura */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp"
+                alt="Laura, 32 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Laura, 32 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Honestamente, pensé que mi ex nunca volvería a buscarme. Estaba resignada. Pero después de aplicar solo dos de los 'Mensajes Obsesivas', su teléfono no paraba de sonar. ¡En menos de una semana, estaba rogando por una segunda oportunidad y ahora está más obsesionado que nunca! Este método es pura magia."
+              </div>
+            </div>
+          </div>
+
+          {/* DEPOIMENTO 2 - Andrea */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/02.webp"
+                alt="Andrea, 28 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Andrea, 28 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Siempre fui yo quien lo buscaba, quien se sentía ansiosa y dependiente. Con 'Mensajes Obsesivas', aprendí a activar su deseo de una manera que nunca imaginé. Ahora es él quien me persigue, quien me valora y me hace sentir la mujer más importante de su vida. ¡Recuperé mi poder y mi paz!"
+              </div>
+            </div>
+          </div>
+
+          {/* DEPOIMENTO 3 - Valeria */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/03.webp"
+                alt="Valeria, 35 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Valeria, 35 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Mi situación era desesperada: mi ex me había bloqueado de todas partes y ya estaba saliendo con otra. Creí que todo estaba perdido. Pero el 'Protocolo de Emergencia' y los 'Mensajes Obsesivas' me dieron la estrategia exacta. No solo me desbloqueó, sino que dejó a la otra y ahora solo tiene ojos para mí. ¡Es increíble cómo funciona!"
+              </div>
+            </div>
+          </div>
+        </div>
+      `,
     },
   },
   {
     id: 8,
-    question: "¿ÉL YA ESTÁ SALIENDO CON OTRA PERSONA?", // Pergunta adaptada
+    question: "¿ÉL YA ESTÁ SALIENDO CON OTRA PERSONA?",
     description: "(Esta información es crucial para definir tu enfoque estratégico y hacer que él la olvide)",
     options: [
-      "🚫 No, está soltero", // Adaptado para mulher
-      "�� No estoy segura", // Adaptado para mulher
+      "🚫 No, está soltero",
+      "🤷 No estoy segura",
       "😔 Sí, está saliendo con alguien",
       "💔 Sí, tiene una relación seria",
       "🔄 Está saliendo con varias personas",
-    ], // Usando apenas a opção feminina
+    ],
     bonusUnlock: {
       id: 2,
       title: "PROTOCOLO DE EMERGENCIA 72H",
@@ -113,12 +169,12 @@ export const quizSteps = [
   },
   {
     id: 9,
-    question: "¿CUÁNTO QUIERES RECUPERARLO Y HACERLO OBSESIVO POR TI?", // Pergunta adaptada
+    question: "¿CUÁNTO QUIERES RECUPERARLO Y HACERLO OBSESIVO POR TI?",
     description: "(Tu nivel de compromiso determinará tu éxito para que él te persiga)",
     subtext:
-      "El 91% de las mujeres que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando la fórmula de Mensajes Obsesivas.", // Adaptado para mulheres
-    options: ["1 - No estoy segura", "2 - Me lo estoy pensando", "3 - Lo quiero bastante", "4 - Lo quiero muchísimo"], // Adaptado para mulheres
-    note: "Solo trabajo con mujeres decididas a transformar su situación amorosa. La fórmula de Mensajes Obsesivas fue desarrollada para quien está preparada para actuar.", // Adaptado para mulheres
+      "El 91% de las mujeres que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando la fórmula de Mensajes Obsesivas.",
+    options: ["1 - No estoy segura", "2 - Me lo estoy pensando", "3 - Lo quiero bastante", "4 - Lo quiero muchísimo"],
+    note: "Solo trabajo con mujeres decididas a transformar su situación amorosa. La fórmula de Mensajes Obsesivas fue desarrollada para quien está preparada para actuar.",
     elements: {
       thermometer: true,
       profileComplete: "85%",
@@ -126,14 +182,14 @@ export const quizSteps = [
   },
   {
     id: 10,
-    question: "EXPERTA ANALIZANDO TU CASO...", // Adaptado para especialista feminina
+    question: "EXPERTA ANALIZANDO TU CASO...",
     description: "Espera mientras analizo tus respuestas para crear tu estrategia personalizada.",
     options: [],
     autoAdvance: true,
     elements: {
       expertPhoto: true,
-      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png", // Substituir por imagem de mulher
-      autoMessage: "Basándome en 7 años de experiencia ayudando a mujeres como tú...", // Adaptado para mulheres
+      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png",
+      autoMessage: "Basándome en 7 años de experiencia ayudando a mujeres como tú...",
       profileComplete: "90%",
     },
   },
@@ -141,14 +197,14 @@ export const quizSteps = [
     id: 11,
     question: "¡FELICITACIONES! He analizado tus respuestas y tengo buenas noticias para ti.",
     description:
-      "Basándome en tu perfil y situación específica, la fórmula de Mensajes Obsesivas tiene un 90,5% de probabilidades de hacer que él te desee obsesivamente.", // Adaptado para a promessa
+      "Basándome en tu perfil y situación específica, la fórmula de Mensajes Obsesivas tiene un 90,5% de probabilidades de hacer que él te desee obsesivamente.",
     options: ["¿VAMOS AL SIGUIENTE PASO?"],
-    note: "Estoy aquí para guiarte personalmente en este viaje de obsesión. En los últimos 7 años, he ayudado a más de 3.847 mujeres a tener a sus hombres obsesionados usando este método exclusivo.", // Adaptado para mulheres
+    note: "Estoy aquí para guiarte personalmente en este viaje de obsesión. En los últimos 7 años, he ayudado a más de 3.847 mujeres a tener a sus hombres obsesionados usando este método exclusivo.",
     elements: {
       expertPhoto: true,
-      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png", // Substituir por imagem de mulher
+      expertImage: "https://nutricaoalimentos.shop/wp-content/uploads/2025/08/a11f9051-833b-49e1-925d-bdc2a3421d10.png",
       profileComplete: "95%",
-      helpedCounter: "Mujeres ayudadas hoy: 17", // Adaptado para mulheres
+      helpedCounter: "Mujeres ayudadas hoy: 17",
       compatibilityCalc: "90,5%",
     },
   },
@@ -161,16 +217,72 @@ export const quizSteps = [
     elements: {
       bigNumber: "91%",
       profileComplete: "98%",
-      testimonialImage: "https://comprarplanseguro.shop/wp-content/uploads/2025/06/prova-nova-espanha-face.png", // Substituir por imagem de mulher
+      testimonialImage: `
+        <div className="depoimentos-container" style="display: flex; flex-direction: column; gap: 20px; margin: 20px 0;">
+          {/* DEPOIMENTO 1 - Laura */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp"
+                alt="Laura, 32 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Laura, 32 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Honestamente, pensé que mi ex nunca volvería a buscarme. Estaba resignada. Pero después de aplicar solo dos de los 'Mensajes Obsesivas', su teléfono no paraba de sonar. ¡En menos de una semana, estaba rogando por una segunda oportunidad y ahora está más obsesionado que nunca! Este método es pura magia."
+              </div>
+            </div>
+          </div>
+
+          {/* DEPOIMENTO 2 - Andrea */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/02.webp"
+                alt="Andrea, 28 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Andrea, 28 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Siempre fui yo quien lo buscaba, quien se sentía ansiosa y dependiente. Con 'Mensajes Obsesivas', aprendí a activar su deseo de una manera que nunca imaginé. Ahora es él quien me persigue, quien me valora y me hace sentir la mujer más importante de su vida. ¡Recuperé mi poder y mi paz!"
+              </div>
+            </div>
+          </div>
+
+          {/* DEPOIMENTO 3 - Valeria */}
+          <div className="depoimento" style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div className="avatar" style="flex-shrink: 0;">
+              <img
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/03.webp"
+                alt="Valeria, 35 años"
+                style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;"
+              />
+            </div>
+            <div>
+              <div className="estrelas" style="color: #FFD700; font-size: 14px; margin-bottom: 5px;">★★★★★</div>
+              <div className="nome-usuario" style="font-weight: bold; color: #fff; font-size: 14px; margin-bottom: 8px;">Valeria, 35 años</div>
+              <div className="texto-depoimento" style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.4; font-style: italic;">
+                "Mi situación era desesperada: mi ex me había bloqueado de todas partes y ya estaba saliendo con otra. Creí que todo estaba perdido. Pero el 'Protocolo de Emergencia' y los 'Mensajes Obsesivas' me dieron la estrategia exacta. No solo me desbloqueó, sino que dejó a la otra y ahora solo tiene ojos para mí. ¡Es increíble cómo funciona!"
+              </div>
+            </div>
+          </div>
+        </div>
+      `,
     },
   },
   {
     id: 13,
     question: "¡INCREÍBLE! TU PERFIL REVELA ALGO SORPRENDENTE...",
     description:
-      "Basándome en tus respuestas, he identificado 3 patrones específicos que aumentan dramáticamente tus posibilidades de éxito para que él te persiga.", // Adaptado para a promessa
+      "Basándome en tus respuestas, he identificado 3 patrones específicos que aumentan dramáticamente tus posibilidades de éxito para que él te persiga.",
     subtext:
-      "El 94% de las mujeres con tu perfil exacto lograron resultados extraordinarios cuando aplicaron la estrategia correcta.", // Adaptado para mulheres
+      "El 94% de las mujeres con tu perfil exacto lograron resultados extraordinarios cuando aplicaron la estrategia correcta.",
     options: ["¡QUIERO CONOCER MI PERFIL COMPLETO!"],
     note: "⚠️ IMPORTANTE: Esta información es muy específica para tu situación. Solo la compartiré contigo en la siguiente pantalla.",
     elements: {
@@ -185,9 +297,9 @@ export const quizSteps = [
     question: "ÚLTIMO PASO: VALIDANDO TU ESTRATEGIA PERSONALIZADA",
     description: "Estoy preparando tu plan específico basado en los 3 patrones únicos que identifiqué en tu caso.",
     subtext:
-      "En los próximos segundos verás exactamente por qué tu situación tiene características tan prometedoras para que él te desee obsesivamente...", // Adaptado para a promessa
+      "En los próximos segundos verás exactamente por qué tu situación tiene características tan prometedoras para que él te desee obsesivamente...",
     options: ["¡SÍ, QUIERO VER MI ESTRATEGIA AHORA!"],
-    note: "🎯 Tu estrategia personalizada incluye los pasos exactos que funcionaron para mujeres en tu misma situación.", // Adaptado para mulheres
+    note: "🎯 Tu estrategia personalizada incluye los pasos exactos que funcionaron para mujeres en tu misma situación.",
     elements: {
       finalValidation: true,
       profileComplete: "100%",
@@ -216,60 +328,58 @@ export const bonuses = [
 
 export const testimonials = [
   {
-    name: "Emília, 29 años", // Nome feminino
-    text: "Usé la 'Bomba de Deseo' hoy y, ¡guau! Digamos que tuve que desactivar mis notificaciones. ¡Él no paraba de buscarme!", // Depoimento adaptado
+    name: "Emília, 29 años",
+    text: "Usé la 'Bomba de Deseo' hoy y, ¡guau! Digamos que tuve que desactivar mis notificaciones. ¡Él no paraba de buscarme!",
     rating: 5,
   },
   {
-    name: "Sofía, 31 años", // Nome feminino
-    text: "De ser 'una más', él me envió un mensaje como 'la ÚNICA' en su mente: ¡este método es oro puro!", // Depoimento adaptado
+    name: "Sofía, 31 años",
+    text: "De ser 'una más', él me envió un mensaje como 'la ÚNICA' en su mente: ¡este método es oro puro!",
     rating: 5,
   },
   {
-    name: "Olivia, 35 años", // Nome feminino
-    text: "Toda mujer necesita este libro. Es como un arma secreta para el mundo moderno de las citas.", // Depoimento adaptado
+    name: "Olivia, 35 años",
+    text: "Toda mujer necesita este libro. Es como un arma secreta para el mundo moderno de las citas.",
     rating: 5,
   },
   {
-    name: "Isabella, 27 años", // Nome feminino
-    text: "Enviar la 'Mensaje del Arrepentimiento' fue tan satisfactorio. ¡Hizo que él recordara nuestros momentos en un instante!", // Depoimento adaptado
+    name: "Isabella, 27 años",
+    text: "Enviar la 'Mensaje del Arrepentimiento' fue tan satisfactorio. ¡Hizo que él recordara nuestros momentos en un instante!",
     rating: 5,
   },
   {
-    name: "Mia, 33 años", // Nome feminino
-    text: "Después de probar 'Mensajes Obsesivas', nuestra comunicación cambió por completo. ¡Ahora tenemos conversaciones profundas, de corazón a corazón, todas las noches!", // Depoimento adaptado
+    name: "Mia, 33 años",
+    text: "Después de probar 'Mensajes Obsesivas', nuestra comunicación cambió por completo. ¡Ahora tenemos conversaciones profundas, de corazón a corazón, todas las noches!",
     rating: 5,
   },
   {
-    name: "Abigail, 25 años", // Nome feminino
-    text: "Honestamente, pensé que esto era solo otro truco. ¿Pero el cambio inmediato en sus respuestas? ¡Me quedé impresionada!", // Depoimento adaptado
+    name: "Abigail, 25 años",
+    text: "Honestamente, pensé que esto era solo otro truco. ¿Pero el cambio inmediato en sus respuestas? ¡Me quedé impresionada!",
     rating: 5,
   },
 ]
 
 export const socialProofMessages = [
-  "¡Estás entre el 17% más decidido a que él te persiga!", // Adaptado
-  "¡Tu perfil muestra compatibilidad con la obsesión masculina!", // Adaptado
+  "¡Estás entre el 17% más decidido a que él te persiga!",
+  "¡Tu perfil muestra compatibilidad con la obsesión masculina!",
   "¡Bonificación liberada por desbloqueo!",
   "¡Has desbloqueado los 2 bonos - valor total de $84!",
-  "El 87% de las mujeres en tu situación lograron resultados en menos de 14 días", // Adaptado
-  "Estás más comprometida que el 73% de las mujeres que hicieron esta prueba", // Adaptado
+  "El 87% de las mujeres en tu situación lograron resultados en menos de 14 días",
+  "Estás más comprometida que el 73% de las mujeres que hicieron esta prueba",
   "-",
   "-",
   "-",
   "-",
 ]
 
-// Função utilitaria para personalizar textos basada en el género (mantida para compatibilidade, mas o quiz agora é focado em feminino)
 export function getPersonalizedContent(content, gender) {
   if (typeof content === "string") {
     return content
   }
 
   if (typeof content === "object" && content !== null) {
-    // Como o quiz agora é focado em feminino, sempre retornamos a versão feminina se houver
     if (content.masculino && content.feminino) {
-      return content.feminino // Força a versão feminina
+      return content.feminino
     }
     return content
   }
