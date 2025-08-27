@@ -307,10 +307,11 @@ export default function ResultPageOptimized() {
                     <div className="flex items-center p-2 pb-1">
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
-                        <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
-                          <span className="text-white font-bold text-xs">EM</span>
-                        </div>
-                      </div>
+                        <img 
+                          src="https://comprarplanseguro.shop/wp-content/uploads/2025/08/Captura-de-Tela-2025-08-08-as-19.01.05.png" // Placeholder
+                          alt="Sofía S."
+                          className="w-full h-full object-cover"
+                        />
                       <div className="flex-1 text-left min-w-0">
                         <h4 className="text-white font-bold text-xs truncate">Emília B.</h4>
                         <p className="text-green-400 text-xs font-semibold">✅ Él obsesionado en 3 días</p>
