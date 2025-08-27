@@ -309,7 +309,7 @@ export default function ResultPageOptimized() {
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
                           src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Placeholder
-                          alt="Sofía S."
+                          alt="Laura S."
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -367,7 +367,7 @@ export default function ResultPageOptimized() {
                   </div>
                 </div>
 
-                {/* TESTIMONIO 2 - Sofía S. (CELULAR DE DEPOIMENTO) */}
+                {/* TESTIMONIO 2 - Laura S. (CELULAR DE DEPOIMENTO) */}
                 <div className="w-full max-w-xs"> {/* max-w-xs para os celulares de depoimento */}
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
@@ -377,12 +377,12 @@ export default function ResultPageOptimized() {
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
                           src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/1-dobra-1-e1756257363224.webp" // Placeholder
-                          alt="Sofía S."
+                          alt="Laura S."
                           className="w-full h-full object-cover"
                         />
                       </div>
                       <div className="flex-1 text-left min-w-0">
-                        <h4 className="text-white font-bold text-xs truncate">Sofía S.</h4>
+                        <h4 className="text-white font-bold text-xs truncate">Laura S.</h4>
                         <p className="text-green-400 text-xs font-semibold">✅ Él me ve como 'la única'</p>
                       </div>
                     </div>

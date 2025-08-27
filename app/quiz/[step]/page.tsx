@@ -385,7 +385,7 @@ export default function QuizStep() {
                   )}
                 </motion.div>
                 <p className="text-orange-300 font-medium"> {/* Corrigido para laranja */}
-                   "Siempre fui yo quien lo buscaba, quien se sentía ansiosa y dependiente. Con 'Mensajes Obsesivas', aprendí a activar su deseo de una manera que nunca imaginé. Ahora es él quien me persigue, quien me valora y me hace sentir la mujer más importante de su vida. ¡Recuperé mi poder y mi paz!"
+                   "Siempre fui yo quien lo buscaba, quien se sentía ansiosa y dependiente. Con 'Mensajes Obsesivas', aprendí a activar su deseo de una manera que nunca imaginé. Ahora es él quien me persigue, quien me valora y me hace sentir la mujer más importante de su vida. ¡Recuperé mi poder y mi paz!" Andrea 35 años
                 </p>
               </CardContent>
             </Card>
