@@ -376,7 +376,7 @@ export default function ResultPageOptimized() {
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
                         {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
-                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/1-dobra-1-e1756257363224.webp" // Placeholder
+                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/06/1-DEPOIMENTO.png" // Placeholder
                           alt="Laura S."
                           className="w-full h-full object-cover"
                         />
