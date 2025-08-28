@@ -143,7 +143,7 @@ export default function ResultPageOptimized() {
                   <div className="flex items-start">
                     <Check className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" />
                     <span className="text-xs sm:text-sm">
-                      Estrategia recomendada: <strong>Mensajes Obsesivas</strong>
+                      Estrategia recomendada: <strong>Mensajes Obsesivos</strong>
                     </span>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ export default function ResultPageOptimized() {
                             <p>¿Y ahora?</p>
                           </div>
                           <div className="message sent">
-                            <p>Seguí los 'Mensajes Obsesivas' al pie de la letra. En 17 días, me llamó llorando pidiendo volver. ¡Estamos comprometidos!</p>
+                            <p>Seguí los 'Mensajes Obsesivos' al pie de la letra. En 17 días, me llamó llorando pidiendo volver. ¡Estamos comprometidos!</p>
                           </div>
                           <div className="message received">
                             <p>¡Increíble! ¿Y él?</p>
@@ -457,7 +457,7 @@ export default function ResultPageOptimized() {
             {/* ANTES */}
             <Card className="bg-gradient-to-r from-red-900 to-red-800 border-2 border-red-500">
               <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-red-300 mb-4 text-center">😢 AHORA (SIN MENSAJES OBSESIVAS)</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-red-300 mb-4 text-center">😢 AHORA (SIN MENSAJES Obsesivos)</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <div className="w-6 h-6 sm:w-8 sm:h-8 bg-red-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
@@ -484,7 +484,7 @@ export default function ResultPageOptimized() {
             {/* DESPUÉS */}
             <Card className="bg-gradient-to-r from-green-600 to-emerald-600 border-2 border-green-400">
               <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-green-100 mb-4 text-center">😍 EN 21 DÍAS (CON MENSAJES OBSESIVAS)</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-green-100 mb-4 text-center">😍 EN 21 DÍAS (CON MENSAJES Obsesivos)</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-400 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
@@ -571,7 +571,7 @@ export default function ResultPageOptimized() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm sm:text-lg font-semibold mb-3">
-                "Él había bloqueado mi número y decía que nunca más quería verme. Seguí la fórmula de Mensajes Obsesivas exactamente como
+                "Él había bloqueado mi número y decía que nunca más quería verme. Seguí la fórmula de Mensajes Obsesivos exactamente como
                 estaba escrito y en 17 días me llamó llorando pidiendo que volviéramos. ¡Hoy estamos comprometidos y él está más obsesionado que nunca!"
               </p>
               <div className="text-xs sm:text-sm text-green-600 font-bold">✅ Él está obsesionado hace 8 meses</div>
@@ -589,7 +589,7 @@ export default function ResultPageOptimized() {
                 🔥 OFERTA ESPECIAL - SOLO HOY
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6">MENSAJES OBSESIVAS - OBSESIÓN GARANTIZADA</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6">MENSAJES Obsesivos - OBSESIÓN GARANTIZADA</h2>
 
               <p className="text-lg sm:text-xl mb-6 sm:mb-8 font-semibold">Fórmula Completa + 2 Bonos Exclusivos</p>
 
@@ -603,7 +603,7 @@ export default function ResultPageOptimized() {
                       <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div className="min-w-0">
-                      <h4 className="text-lg sm:text-xl font-bold text-white">MENSAJES OBSESIVAS: Fórmula Completa</h4>
+                      <h4 className="text-lg sm:text-xl font-bold text-white">MENSAJES OBSESIVOS: Fórmula Completa</h4>
                       <p className="text-gray-200 mb-2 text-sm sm:text-base">
                         4 módulos con estrategias paso a paso para que él se obsesione contigo
                       </p>
