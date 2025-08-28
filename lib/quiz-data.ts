@@ -116,9 +116,9 @@ export const quizSteps = [
     question: "¿CUÁNTO QUIERES RECUPERARLO Y HACERLO OBSESIVO POR TI?", // Pergunta adaptada
     description: "(Tu nivel de compromiso determinará tu éxito para que él te persiga)",
     subtext:
-      "El 91% de las mujeres que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando la fórmula de Mensajes Obsesivas.", // Adaptado para mulheres
+      "El 91% de las mujeres que seleccionaron nivel 4 reconquistaron a su ex en menos de 21 días usando la fórmula de Mensajes Obsesivos.", // Adaptado para mulheres
     options: ["1 - No estoy segura", "2 - Me lo estoy pensando", "3 - Lo quiero bastante", "4 - Lo quiero muchísimo"], // Adaptado para mulheres
-    note: "Solo trabajo con mujeres decididas a transformar su situación amorosa. La fórmula de Mensajes Obsesivas fue desarrollada para quien está preparada para actuar.", // Adaptado para mulheres
+    note: "Solo trabajo con mujeres decididas a transformar su situación amorosa. La fórmula de Mensajes Obsesivos fue desarrollada para quien está preparada para actuar.", // Adaptado para mulheres
     elements: {
       thermometer: true,
       profileComplete: "85%",
@@ -141,7 +141,7 @@ export const quizSteps = [
     id: 11,
     question: "¡FELICITACIONES! He analizado tus respuestas y tengo buenas noticias para ti.",
     description:
-      "Basándome en tu perfil y situación específica, la fórmula de Mensajes Obsesivas tiene un 90,5% de probabilidades de hacer que él te desee obsesivamente.", // Adaptado para a promessa
+      "Basándome en tu perfil y situación específica, la fórmula de Mensajes Obsesivos tiene un 90,5% de probabilidades de hacer que él te desee obsesivamente.", // Adaptado para a promessa
     options: ["¿VAMOS AL SIGUIENTE PASO?"],
     note: "Estoy aquí para guiarte personalmente en este viaje de obsesión. En los últimos 7 años, he ayudado a más de 3.847 mujeres a tener a sus hombres obsesionados usando este método exclusivo.", // Adaptado para mulheres
     elements: {
@@ -155,7 +155,7 @@ export const quizSteps = [
   {
     id: 12,
     question: "RESULTADOS COMPROBADOS",
-    subtext: "EL 91% DE MIS ESTUDIANTES VIERON RESULTADOS ESPECTACULARES EN LOS PRIMEROS 7 DÍAS APLICANDO LA FÓRMULA DE MENSAJES OBSESIVAS",
+    subtext: "EL 91% DE MIS ESTUDIANTES VIERON RESULTADOS ESPECTACULARES EN LOS PRIMEROS 7 DÍAS APLICANDO LA FÓRMULA DE MENSAJES Obsesivos",
     description: "",
     options: ["¡YO TAMBIÉN QUIERO ESOS RESULTADOS!"],
     elements: {
@@ -237,7 +237,7 @@ export const testimonials = [
   },
   {
     name: "Mia, 33 años", // Nome feminino
-    text: "Después de probar 'Mensajes Obsesivas', nuestra comunicación cambió por completo. ¡Ahora tenemos conversaciones profundas, de corazón a corazón, todas las noches!", // Depoimento adaptado
+    text: "Después de probar 'Mensajes Obsesivos', nuestra comunicación cambió por completo. ¡Ahora tenemos conversaciones profundas, de corazón a corazón, todas las noches!", // Depoimento adaptado
     rating: 5,
   },
   {
