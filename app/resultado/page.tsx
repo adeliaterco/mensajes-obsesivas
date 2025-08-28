@@ -256,7 +256,6 @@ export default function ResultPageOptimized() {
               🎯 <span className="text-orange-400">DESCUBRE LA FÓRMULA</span> QUE HACE POSIBLE TU RESULTADO
             </h2>
             <p className="text-sm sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
-              3 especialistas revelan los{" "}
               <span className="text-orange-400 font-bold">disparadores psicológicos exactos</span> que harán que{" "}
               {getPersonalizedPronoun()} se obsesione contigo sin perseguir ni suplicar
             </p>
