@@ -379,7 +379,7 @@ export default function HomePage() {
         </div>
 
         {/* Copyright */}
-        <div className="copyright">Mensajes Obsesivas™ Todos los Derechos Reservados.</div>
+        <div className="copyright">M.O™ Todos los Derechos Reservados.</div>
 
         <style jsx>{`
           @keyframes spin {
