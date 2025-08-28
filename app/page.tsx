@@ -168,7 +168,18 @@ export default function HomePage() {
   padding-top: 100px;
   contain: layout style paint;}
 .copyright{position:relative;margin-top:40px;padding:20px;color:#888;font-size:12px;text-align:center}
-@media (max-width:768px){.container-preto{padding:25px!important;margin:10px!important;border-radius:20px!important}.logo-container{margin-bottom:30px!important}.logo-arredondada{width:160px!important;height:100px!important;border:3px solid #dc2626!important}.titulo-principal{font-size:26px!important;margin-bottom:18px!important;line-height:1.2!important}.subtitulo{font-size:16px!important;margin-bottom:25px!important}.depoimento{padding:15px;margin:20px auto;max-width:95%}.btn-quiz-pulsante{padding:16px 32px!important;font-size:16px!important;max-width:95%!important}.main-content{padding-top:20px;min-height:calc(100vh - 40px)}.copyright{margin-top:30px;padding:15px}}
+.urgencia-banner{background:linear-gradient(90deg,#dc2626,#f59e0b,#dc2626);background-size:200% 100%;animation:urgenciaGlow 2s ease-in-out infinite alternate;padding:12px;text-align:center;margin-bottom:30px;border-radius:10px;position:relative;z-index:10}
+.urgencia-content{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
+.urgencia-text{color:white;font-weight:bold;font-size:14px}
+.urgencia-timer{background:black;color:#fbbf24;padding:4px 8px;border-radius:5px;font-weight:bold;font-size:12px}
+@keyframes urgenciaGlow{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+.dolor-trigger{background:linear-gradient(145deg,#dc2626,#b91c1c);padding:20px;border-radius:15px;margin-bottom:25px;border:2px solid #fbbf24;animation:fadeInUp 1.2s ease-out 1.2s both}
+.texto-dolor{color:white!important;font-size:16px!important;font-weight:600!important;text-align:center!important;margin:0!important;line-height:1.4!important}
+.escassez-contador{display:flex;justify-content:center;gap:20px;margin-bottom:25px;flex-wrap:wrap}
+.contador-item{background:rgba(220,38,38,.9);border:2px solid #fbbf24;border-radius:12px;padding:12px 16px;text-align:center;min-width:120px}
+.contador-item .numero{display:block;font-size:24px;font-weight:900;color:#fbbf24;line-height:1}
+.contador-item .texto{display:block;font-size:11px;color:white;font-weight:600;margin-top:4px}
+@media (max-width:768px){.container-preto{padding:25px!important;margin:10px!important;border-radius:20px!important}.logo-container{margin-bottom:30px!important}.logo-arredondada{width:160px!important;height:100px!important;border:3px solid #dc2626!important}.titulo-principal{font-size:26px!important;margin-bottom:18px!important;line-height:1.2!important}.subtitulo{font-size:16px!important;margin-bottom:25px!important}.depoimento{padding:15px;margin:20px auto;max-width:95%}.btn-quiz-pulsante{padding:16px 32px!important;font-size:16px!important;max-width:95%!important}.main-content{padding-top:20px;min-height:calc(100vh - 40px)}.copyright{margin-top:30px;padding:15px}.urgencia-content{flex-direction:column;gap:8px}.urgencia-text{font-size:12px}.escassez-contador{flex-direction:column;align-items:center;gap:12px}.contador-item{min-width:200px}.dolor-trigger{padding:15px;margin-bottom:20px}.texto-dolor{font-size:14px!important}}
 @media (max-width:480px){.container-preto{padding:20px!important;margin:5px!important}.logo-arredondada{width:140px!important;height:85px!important;border:2px solid #dc2626!important}.titulo-principal{font-size:22px!important;line-height:1.1!important}.subtitulo{font-size:14px!important}.depoimento{padding:12px;gap:10px;margin:15px auto}.avatar{width:35px;height:35px}.btn-quiz-pulsante{padding:14px 28px!important;font-size:14px!important}.copyright{margin-top:25px;padding:10px;font-size:11px}}
 @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 `}</style>
@@ -240,12 +251,21 @@ export default function HomePage() {
 
         {/* CONTEÚDO PRINCIPAL */}
         <div className="main-content">
+          {/* BANNER DE URGÊNCIA - ADICIONADO */}
+          <div className="urgencia-banner">
+            <div className="urgencia-content">
+              <span className="urgencia-icon">⚠️</span>
+              <span className="urgencia-text">SOLO HOY: Acceso GRATIS por tiempo limitado</span>
+              <span className="urgencia-timer">Expira en: 14:32</span>
+            </div>
+          </div>
+
           <div className="container-preto">
             {/* LOGO CENTRALIZADA - IMAGEM WEBP OTIMIZADA */}
             <div className="logo-container">
               <Image
-                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/Untitled-design.webp" // Substituir pela logo da sua oferta
-                alt="Logo Mensajes Obsesivas" // Alt text atualizado
+                src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/Untitled-design.webp"
+                alt="Logo Mensajes Obsesivas"
                 width={200}
                 height={120}
                 className="logo-arredondada"
@@ -261,15 +281,35 @@ export default function HomePage() {
               />
             </div>
 
-            {/* TÍTULO PRINCIPAL OTIMIZADO */}
+            {/* TÍTULO PRINCIPAL OTIMIZADO - ALTERADO */}
             <h1 className="titulo-principal">
-              Haz que él se obsesione contigo y no te deje ir jamás.
+              3 MENSAJES que harán que él te RUEGUE volver
             </h1>
 
-            {/* SUBTÍTULO OTIMIZADO */}
+            {/* SUBTÍTULO OTIMIZADO - ALTERADO */}
             <p className="subtitulo">
-              Sin juegos mentales. Solo el poder de la fórmula probada por más de 3.847 mujeres.
+              COPIA y PEGA estos 3 mensajes. Él responderá en MINUTOS.
             </p>
+
+            {/* GATILHO DE DOR - ADICIONADO */}
+            <div className="dolor-trigger">
+              <p className="texto-dolor">
+                ¿Cansada de que te ignore? ¿De ser "una más"? 
+                ¿De ver cómo él está con OTRA mientras tú sufres?
+              </p>
+            </div>
+
+            {/* ESCASSEZ NUMÉRICA - ADICIONADO */}
+            <div className="escassez-contador">
+              <div className="contador-item">
+                <span className="numero">47</span>
+                <span className="texto">accesos restantes hoy</span>
+              </div>
+              <div className="contador-item">
+                <span className="numero">127</span>
+                <span className="texto">mujeres viendo ahora</span>
+              </div>
+            </div>
 
             {/* INDICADOR DE PROGRESSO */}
             <div className="indicador-progresso">
@@ -280,7 +320,7 @@ export default function HomePage() {
               <span>Paso 1</span>
             </div>
 
-            {/* BOTÃO CTA OTIMIZADO */}
+            {/* BOTÃO CTA OTIMIZADO - ALTERADO */}
             <button onClick={handleStart} disabled={isLoading || !isOnline} className="btn-quiz-pulsante">
               {isLoading ? (
                 <span style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -299,7 +339,7 @@ export default function HomePage() {
                 </span>
               ) : (
                 <span style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  COMENZAR QUIZ AHORA
+                  DESCUBRIR LOS 3 MENSAJES AHORA
                   <ArrowRight style={{ marginLeft: "12px", width: "22px", height: "22px" }} />
                 </span>
               )}
@@ -313,12 +353,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* DEPOIMENTO MELHORADO - AVATAR WEBP OTIMIZADO */}
+        {/* DEPOIMENTO MELHORADO - ALTERADO */}
         <div className="depoimento">
           <div className="avatar">
             <Image
-              src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Substituir por imagem de mulher
-              alt="Emília R." // Nome feminino
+              src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp"
+              alt="Emília R."
               width={55}
               height={55}
               style={{ borderRadius: "50%", objectFit: "cover" }}
@@ -326,20 +366,20 @@ export default function HomePage() {
               sizes="(max-width: 480px) 35px, 55px"
               loading="lazy"
               placeholder="blur"
-              blurDataURL="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA"
+              blurDataURL="data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VLIAAAA"
             />
           </div>
           <div>
             <div className="estrelas">★★★★★</div>
-            <div className="nome-usuario">Emília R. (@EmiliaR)</div> {/* Nome feminino */}
+            <div className="nome-usuario">Emília R. (@EmiliaR)</div>
             <div className="texto-depoimento">
-              "Apliqué la fórmula de Mensajes Obsesivas y en 2 semanas él volvió, ¡más obsesionado que nunca! Sin juegos mentales, ¡simplemente funciona!"
+              "Envié el 'Mensaje del Arrepentimiento' un martes. El viernes él me escribió: 'No puedo vivir sin ti, perdóname' ¡Después de 3 meses ignorándome!"
             </div>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="copyright">Mensajes Obsesivas™ Todos los Derechos Reservados.</div> {/* Nome da oferta */}
+        <div className="copyright">Mensajes Obsesivas™ Todos los Derechos Reservados.</div>
 
         <style jsx>{`
           @keyframes spin {
