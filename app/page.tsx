@@ -256,7 +256,6 @@ export default function HomePage() {
             <div className="urgencia-content">
               <span className="urgencia-icon">⚠️</span>
               <span className="urgencia-text">SOLO HOY: Descubre tu estrategia personalizada</span>
-              <span className="urgencia-timer">Expira en: 14:32</span>
             </div>
           </div>
 
