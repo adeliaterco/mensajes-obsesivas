@@ -143,7 +143,7 @@ export default function ResultPageOptimized() {
                   <div className="flex items-start">
                     <Check className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 mr-2 mt-1 flex-shrink-0" />
                     <span className="text-xs sm:text-sm">
-                      Estrategia recomendada: <strong>Mensajes Obsesivos</strong>
+                      Estrategia recomendada: <strong>M.O Mensajes Obsesivos</strong>
                     </span>
                   </div>
                 </div>
@@ -571,7 +571,7 @@ export default function ResultPageOptimized() {
                 </div>
               </div>
               <p className="text-gray-700 text-sm sm:text-lg font-semibold mb-3">
-                "Él había bloqueado mi número y decía que nunca más quería verme. Seguí la fórmula de Mensajes Obsesivos exactamente como
+                "Él había bloqueado mi número y decía que nunca más quería verme. Seguí la fórmula de M.O Mensajes Obsesivos exactamente como
                 estaba escrito y en 17 días me llamó llorando pidiendo que volviéramos. ¡Hoy estamos comprometidos y él está más obsesionado que nunca!"
               </p>
               <div className="text-xs sm:text-sm text-green-600 font-bold">✅ Él está obsesionado hace 8 meses</div>
@@ -589,7 +589,7 @@ export default function ResultPageOptimized() {
                 🔥 OFERTA ESPECIAL - SOLO HOY
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6">MENSAJES Obsesivos - OBSESIÓN GARANTIZADA</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 sm:mb-6">M.O - MENSAJES OBSESIVOS</h2>
 
               <p className="text-lg sm:text-xl mb-6 sm:mb-8 font-semibold">Fórmula Completa + 2 Bonos Exclusivos</p>
 
@@ -603,7 +603,7 @@ export default function ResultPageOptimized() {
                       <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div className="min-w-0">
-                      <h4 className="text-lg sm:text-xl font-bold text-white">MENSAJES OBSESIVOS: Fórmula Completa</h4>
+                      <h4 className="text-lg sm:text-xl font-bold text-white">M.O: Fórmula Completa</h4>
                       <p className="text-gray-200 mb-2 text-sm sm:text-base">
                         4 módulos con estrategias paso a paso para que él se obsesione contigo
                       </p>
