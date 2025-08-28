@@ -97,13 +97,13 @@ export default function ResultPageOptimized() {
             <span className="whitespace-nowrap">RESULTADO DISPONIBLE POR TIEMPO LIMITADO</span>
           </div>
 
-          {/* Headline Principal - Mobile Optimized */}
+          {/* 🎯 MELHORIA #1: HEADLINE MAIS ESPECÍFICA */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-black text-white mb-4 leading-tight px-2">
             🎯 <span className="text-orange-400">¡FELICITACIONES!</span>
             <br />
             TU CASO TIENE UN <span className="text-green-400">90,5%</span>
             <br />
-            DE PROBABILIDAD DE QUE ÉL SE OBSESIONE
+            DE PROBABILIDAD DE QUE ÉL <span className="text-yellow-400">TE BUSQUE EN 14 DÍAS</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 max-w-2xl mx-auto font-semibold px-4">
@@ -151,7 +151,7 @@ export default function ResultPageOptimized() {
             </Card>
           </div>
 
-          {/* CTA Principal - Mobile Optimized */}
+          {/* 🎯 MELHORIA #2: CTA MAIS DIRETO E ESPECÍFICO */}
           <motion.div
             animate={{
               scale: [1, 1.05, 1],
@@ -170,7 +170,7 @@ export default function ResultPageOptimized() {
               onTouchStart={handleTouchFeedback}
             >
               <Heart className="w-4 h-4 sm:w-6 sm:h-6 mr-2 flex-shrink-0" />
-              <span className="text-center leading-tight">HACER QUE ÉL SE OBSESIONE AHORA POR $14</span>
+              <span className="text-center leading-tight">OBTENER M.O AHORA POR $14 (VALOR $97)</span>
               <ArrowRight className="w-4 h-4 sm:w-6 sm:h-6 ml-2 flex-shrink-0" />
             </Button>
           </motion.div>
@@ -217,7 +217,38 @@ export default function ResultPageOptimized() {
         </div>
       </div>
 
-      {/* SECCIÓN MOCKUP DE CELULAR CON MENSAJES SECRETOS (VSL Principal) */}
+      {/* 🎯 MELHORIA #3: SEÇÃO DE RISCO/DOR ANTES DA OFERTA */}
+      <div className="px-4 py-8 bg-gradient-to-r from-red-800 to-black">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+            ⚠️ <span className="text-red-400">CUIDADO:</span> SI NO ACTÚAS HOY...
+          </h2>
+          
+          <div className="grid gap-4 max-w-2xl mx-auto">
+            <div className="bg-red-900/50 p-4 rounded-lg border border-red-500">
+              <p className="text-red-100 text-sm sm:text-base">
+                ❌ <strong>Él seguirá ignorándote</strong> y buscando a otras mujeres
+              </p>
+            </div>
+            <div className="bg-red-900/50 p-4 rounded-lg border border-red-500">
+              <p className="text-red-100 text-sm sm:text-base">
+                ❌ <strong>Perderás esta oportunidad única</strong> de tenerlo obsesionado
+              </p>
+            </div>
+            <div className="bg-red-900/50 p-4 rounded-lg border border-red-500">
+              <p className="text-red-100 text-sm sm:text-base">
+                ❌ <strong>El precio volverá a $97</strong> y los bonos desaparecerán
+              </p>
+            </div>
+          </div>
+          
+          <p className="text-orange-300 font-bold text-lg sm:text-xl mt-6">
+            No dejes que esta oportunidad se escape...
+          </p>
+        </div>
+      </div>
+
+      {/* 🎯 MELHORIA #4: MOCKUP DE CELULAR MELHORADO */}
       <div className="px-4 py-8 bg-gradient-to-r from-gray-900 to-black">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -231,9 +262,9 @@ export default function ResultPageOptimized() {
             </p>
           </div>
 
-          {/* MOCKUP DE CELULAR PRINCIPAL - TAMANHO AJUSTADO */}
+          {/* MOCKUP DE CELULAR PRINCIPAL - MENSAGENS MELHORADAS */}
           <div className="flex justify-center mb-8">
-            <div className="phone-mockup main-phone w-full max-w-sm"> {/* max-w-sm para o celular principal */}
+            <div className="phone-mockup main-phone w-full max-w-sm">
               <div className="screen">
                 <div className="header">
                   <span className="time">9:41</span>
@@ -245,34 +276,28 @@ export default function ResultPageOptimized() {
                 </div>
                 <div className="chat-area">
                   <div className="message received">
-                    <p>¿Qué es lo que realmente lo hace obsesionarse?</p>
+                    <p>¿Cómo hago que él me busque desesperadamente?</p>
                   </div>
                   <div className="message sent">
-                    <p>Es más simple de lo que crees. Son mensajes específicos...</p>
+                    <p>Hay 3 mensajes específicos que activan su "cerebro obsesivo"...</p>
                   </div>
                   <div className="message received">
-                    <p>¿Mensajes? ¿Cómo cuáles?</p>
+                    <p>¿En serio? ¿Cuáles son?</p>
                   </div>
                   <div className="message sent">
-                    <p>
-                      Los que activan su "cerebro reptiliano". Por ejemplo, el "Mensaje del Deseo Incontrolable"...
-                    </p>
+                    <p>El "Mensaje del Arrepentimiento", el "Mensaje de la Única" y el "Mensaje Fatal"...</p>
                   </div>
                   <div className="message received">
-                    <p>¡Cuéntame más! ¿Y si ya tiene a otra?</p>
+                    <p>¡Necesito esos mensajes YA!</p>
                   </div>
                   <div className="message sent">
-                    <p>
-                      Hay una secuencia para eso: el "Mensaje del Olvido" y el "Mensaje de la Única".
-                    </p>
+                    <p>Están en M.O. En 14 días él estará rogándote que vuelvas.</p>
                   </div>
                   <div className="message received">
-                    <p>¿Y si no responde?</p>
+                    <p>¿Y si ya tiene novia?</p>
                   </div>
                   <div className="message sent">
-                    <p>
-                      La clave no es solo qué decir, sino cuándo y cómo. La "Fórmula de la Persecución Inversa" lo garantiza.
-                    </p>
+                    <p>El "Protocolo de Emergencia" funciona incluso en esos casos. Es devastador.</p>
                   </div>
                 </div>
               </div>
@@ -282,14 +307,14 @@ export default function ResultPageOptimized() {
           {/* Call to Action após o mockup */}
           <div className="text-center">
             <div className="bg-orange-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full inline-block font-bold text-sm sm:text-lg mb-4 animate-bounce">
-              �� APLICA ESTO Y VERÁS RESULTADOS EN DÍAS
+              ✨ APLICA ESTO Y VERÁS RESULTADOS EN DÍAS
             </div>
 
-            {/* �� SEÇÃO DE DEPOIMENTOS EM CELULAR MOBILE - CENTRALIZADO */}
+            {/* 📱 SEÇÃO DE DEPOIMENTOS EM CELULAR MOBILE - CENTRALIZADO */}
             <div className="my-8">
               <div className="text-center mb-6">
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
-                  �� <span className="text-orange-400">TESTIMONIOS REALES </span> DE QUIEN YA LO LOGRÓ
+                  🎙️ <span className="text-orange-400">TESTIMONIOS REALES </span> DE QUIEN YA LO LOGRÓ
                 </h3>
                 <p className="text-gray-300 text-sm sm:text-base px-4">
                   Escucha las historias de mujeres que hicieron que él se obsesionara con ellas
@@ -300,16 +325,15 @@ export default function ResultPageOptimized() {
               <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8">
                 
                 {/* TESTIMONIO 1 - Emília (CELULAR DE DEPOIMENTO) */}
-                <div className="w-full max-w-xs"> {/* max-w-xs para os celulares de depoimento */}
+                <div className="w-full max-w-xs">
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
                     {/* Header do Story 1 */}
                     <div className="flex items-center p-2 pb-1">
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
-                        {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
-                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Placeholder
-                          alt="Laura S."
+                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp"
+                          alt="Emília B."
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -368,15 +392,14 @@ export default function ResultPageOptimized() {
                 </div>
 
                 {/* TESTIMONIO 2 - Laura S. (CELULAR DE DEPOIMENTO) */}
-                <div className="w-full max-w-xs"> {/* max-w-xs para os celulares de depoimento */}
+                <div className="w-full max-w-xs">
                   <div className="relative bg-black rounded-2xl p-2 border-2 border-orange-500 shadow-xl overflow-hidden">
                     
                     {/* Header do Story 2 */}
                     <div className="flex items-center p-2 pb-1">
                       <div className="w-8 h-8 rounded-full border border-orange-400 overflow-hidden mr-2 flex-shrink-0">
-                        {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                         <img 
-                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/06/1-DEPOIMENTO.png" // Placeholder
+                          src="https://nutricaoalimentos.shop/wp-content/uploads/2025/06/1-DEPOIMENTO.png"
                           alt="Laura S."
                           className="w-full h-full object-cover"
                         />
@@ -437,7 +460,6 @@ export default function ResultPageOptimized() {
 
               </div>
             </div>
-            {/* 🔥 FIM DA SEÇÃO DE DEPOIMENTOS EM CELULAR MOBILE */}
 
             <p className="text-white text-sm sm:text-lg font-semibold px-4">
               Ahora que conoces la fórmula, es hora de <span className="text-orange-400">ponerla en práctica</span>
@@ -554,9 +576,8 @@ export default function ResultPageOptimized() {
             <CardContent className="p-4 sm:p-6">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gray-200 overflow-hidden mr-3 sm:mr-4 flex-shrink-0">
-                  {/* NOTA: SUBSTITUIR POR IMAGEM DE MULHER */}
                   <img
-                    src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp" // Placeholder
+                    src="https://nutricaoalimentos.shop/wp-content/uploads/2025/08/01.webp"
                     alt="Emília R."
                     className="w-full h-full object-cover"
                   />
@@ -681,7 +702,7 @@ export default function ResultPageOptimized() {
                   className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-black py-4 sm:py-6 px-4 sm:px-8 rounded-full text-lg sm:text-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-4 border-white min-h-[64px] flex items-center justify-center"
                   onTouchStart={handleTouchFeedback}
                 >
-                  <span className="text-center leading-tight">💕 HACER QUE ÉL SE OBSESIONE AHORA POR $14</span>
+                  <span className="text-center leading-tight">💕 OBTENER M.O AHORA POR $14 (VALOR $97)</span>
                   <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-2 flex-shrink-0" />
                 </Button>
               </motion.div>
@@ -714,7 +735,7 @@ export default function ResultPageOptimized() {
       {/* GARANTÍA */}
       <div className="px-4 py-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-green-50 border-4 border-green-400 shadow-2xl">
+                    <Card className="bg-green-50 border-4 border-green-400 shadow-2xl">
             <CardContent className="p-4 sm:p-8 text-center">
               <Shield className="w-16 h-16 sm:w-20 sm:h-20 text-green-600 mx-auto mb-4 sm:mb-6" />
               <h2 className="text-2xl sm:text-3xl font-bold text-green-800 mb-4">GARANTÍA TOTAL DE 30 DÍAS</h2>
@@ -788,7 +809,8 @@ export default function ResultPageOptimized() {
 
             <motion.div
               animate={{
-                scale: [1, 1.1, 1],}}
+                scale: [1, 1.1, 1],
+              }}
               transition={{
                 duration: 1.5,
                 repeat: Number.POSITIVE_INFINITY,
